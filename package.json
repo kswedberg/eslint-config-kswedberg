@@ -1,0 +1,21 @@
+{
+  "name": "eslint-config-kswedberg",
+  "version": "0.1.0",
+  "description": "A shareable eslint config",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kswedberg/eslint-config-kswedberg.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Karl Swedberg <kswedberg@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kswedberg/eslint-config-kswedberg/issues"
+  },
+  "homepage": "https://github.com/kswedberg/eslint-config-kswedberg#readme"
+}
