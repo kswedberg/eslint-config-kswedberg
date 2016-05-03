@@ -1,3 +1,56 @@
+
+module.exports.variables = {
+  'no-delete-var': 2,
+  'no-undef': 2,
+  'no-use-before-define': 2,
+};
+
+module.exports.possibleErrors = {
+  'no-cond-assign': [
+    2,
+    'except-parens'
+  ],
+  'no-empty': 2,
+  'no-extra-semi': 2,
+  'no-inner-declarations': 1,
+  'no-obj-calls': 2,
+};
+
+module.exports.es6 = {
+  'arrow-body-style': [
+    1,
+    'always'
+  ],
+  'no-class-assign': 2,
+  'no-const-assign': 2,
+  'no-duplicate-imports': 2,
+  'no-this-before-super': 2,
+  'no-confusing-arrow': 1,
+};
+
+module.exports.bestPractices = {
+  curly: [
+    2,
+    'all'
+  ],
+  'dot-notation': [
+    2,
+    {
+      allowPattern: '^[a-z]*_[_a-z]*$'
+    }
+  ],
+  'no-caller': 2,
+  'no-eq-null': 0,
+  'no-invalid-this': 0,
+  'no-multi-str': 2,
+  'no-with': 2,
+  'wrap-iife': 1,
+  yoda: [
+    2,
+    'never'
+  ],
+};
+
 module.exports.stylistic = {
   'array-bracket-spacing': [
     1,
@@ -116,6 +169,7 @@ module.exports.stylistic = {
     2,
     'always'
   ],
+  'semi-spacing': 1,
   'space-before-blocks': [
     1,
     'always'
@@ -146,47 +200,4 @@ module.exports.stylistic = {
     }
   ],
 
-};
-
-module.exports.bestPractices = {
-  curly: [
-    2,
-    'all'
-  ],
-  'dot-notation': [
-    2,
-    {
-      allowPattern: '^[a-z]*_[_a-z]*$'
-    }
-  ],
-  'no-caller': 2,
-  'no-eq-null': 0,
-  'no-invalid-this': 0,
-  'no-multi-str': 2,
-  'no-with': 2,
-  'wrap-iife': 1,
-  yoda: [
-    2,
-    'never'
-  ],
-};
-
-module.exports.variables = {
-  'no-delete-var': 2,
-  'no-undef': 2,
-  'no-use-before-define': 2,
-};
-var possibleErrors = {
-  'no-cond-assign': [
-    2,
-    'except-parens'
-  ],
-  'no-empty': 2,
-};
-
-module.exports.es6 = {
-  'no-class-assign': 2,
-  'no-const-assign': 2,
-  'no-duplicate-imports': 2,
-  'no-this-before-super': 2
 };
