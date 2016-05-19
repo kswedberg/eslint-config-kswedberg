@@ -13,9 +13,13 @@ module.exports = {
     ecmaVersion: 6,
     sourceType: 'module',
     ecmaFeatures: {
+      jsx: true,
       impliedStrict: true,
     }
   },
+  plugins: [
+    'react'
+  ],
   env: {
     browser: true,
     node: true,
