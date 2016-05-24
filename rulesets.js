@@ -161,7 +161,9 @@ module.exports.stylistic = {
   'newline-before-return': 1,
   'newline-per-chained-call': [
     1,
-    ignoreChainWithDepth: 3
+    {
+      ignoreChainWithDepth: 3
+    }
   ],
 
   quotes: [
