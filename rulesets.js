@@ -159,7 +159,10 @@ module.exports.stylistic = {
   ],
   'newline-after-var': 1,
   'newline-before-return': 1,
-  'newline-per-chained-call': 1,
+  'newline-per-chained-call': [
+    1,
+    ignoreChainWithDepth: 3
+  ],
 
   quotes: [
     1,
