@@ -44,7 +44,10 @@ module.exports.bestPractices = {
   'no-invalid-this': 0,
   'no-multi-str': 2,
   'no-with': 2,
-  'wrap-iife': 1,
+  'wrap-iife': [
+    1,
+    'any'
+  ],
   yoda: [
     2,
     'never'
