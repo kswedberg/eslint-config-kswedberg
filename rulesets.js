@@ -1,87 +1,87 @@
 
 module.exports.variables = {
-  'no-delete-var': 2,
-  'no-undef': 2,
-  'no-use-before-define': 2,
+  'no-delete-var': 'warn',
+  'no-undef': 'warn',
+  'no-use-before-define': 'warn',
 };
 
 module.exports.possibleErrors = {
   'no-cond-assign': [
-    2,
+    'warn',
     'except-parens'
   ],
-  'no-empty': 2,
-  'no-extra-semi': 2,
-  'no-inner-declarations': 1,
-  'no-obj-calls': 2,
+  'no-empty': 'warn',
+  'no-extra-semi': 'warn',
+  'no-inner-declarations': 'error',
+  'no-obj-calls': 'warn',
 };
 
 module.exports.es6 = {
   'arrow-body-style': [
-    1,
+    'error',
     'always'
   ],
-  'no-class-assign': 2,
-  'no-const-assign': 2,
-  'no-duplicate-imports': 2,
-  'no-this-before-super': 2,
-  'no-confusing-arrow': 1,
+  'no-class-assign': 'warn',
+  'no-const-assign': 'warn',
+  'no-duplicate-imports': 'warn',
+  'no-this-before-super': 'warn',
+  'no-confusing-arrow': 'error',
 };
 
 module.exports.bestPractices = {
   curly: [
-    2,
+    'warn',
     'all'
   ],
   'dot-notation': [
-    2,
+    'warn',
     {
       allowPattern: '^[a-z]*_[_a-z]*$'
     }
   ],
-  'no-caller': 2,
-  'no-eq-null': 0,
-  'no-invalid-this': 0,
-  'no-multi-str': 2,
-  'no-with': 2,
+  'no-caller': 'warn',
+  'no-eq-null': 'off',
+  'no-invalid-this': 'off',
+  'no-multi-str': 'warn',
+  'no-with': 'warn',
   'wrap-iife': [
-    1,
+    'error',
     'any'
   ],
   yoda: [
-    2,
+    'warn',
     'never'
   ],
 };
 
 module.exports.stylistic = {
   'array-bracket-spacing': [
-    1,
+    'warn',
     'never'
   ],
-  'brace-style': 1,
-  camelcase: 1,
-  'eol-last': 1,
+  'brace-style': 'error',
+  camelcase: 'error',
+  'eol-last': 'error',
   'func-style': [
-    1,
+    'error',
     'expression'
   ],
   indent: [
-    1,
+    'error',
     2
   ],
   'jsx-quotes': [
-    1,
+    'error',
     'prefer-single'
   ],
   'key-spacing': [
-    1,
+    'error',
     {
       afterColon: true
     }
   ],
   'keyword-spacing': [
-    1,
+    'error',
     {
       overrides: {
         'if': {
@@ -121,33 +121,33 @@ module.exports.stylistic = {
     }
   ],
   'linebreak-style': [
-    2,
+    'warn',
     'unix'
   ],
   'max-params': [
-    1,
+    'error',
     5
   ],
-  'new-cap': 1,
-  'no-array-constructor': 2,
-  'no-lonely-if': 1,
+  'new-cap': 'error',
+  'no-array-constructor': 'warn',
+  'no-lonely-if': 'error',
   'no-mixed-spaces-and-tabs': [
-    1,
+    'error',
     'smart-tabs'
   ],
-  'no-multiple-empty-lines': 2,
-  'no-trailing-spaces': 1,
+  'no-multiple-empty-lines': 'warn',
+  'no-trailing-spaces': 'error',
   'no-underscore-dangle': [
-    1,
+    'error',
     {
       allow: ['_this'],
       allowAfterThis: true
     }
   ],
-  'no-unneeded-ternary': 1,
-  'no-whitespace-before-property': 1,
+  'no-unneeded-ternary': 'error',
+  'no-whitespace-before-property': 'error',
   'one-var': [
-    1,
+    'error',
     {
       initialized: 'never'
     }
@@ -160,39 +160,42 @@ module.exports.stylistic = {
       keywords: true
     }
   ],
-  'newline-after-var': 1,
-  'newline-before-return': 1,
+  'newline-after-var': 'warn',
+  'newline-before-return': 'warn',
   'newline-per-chained-call': [
-    1,
+    'warn',
     {
       ignoreChainWithDepth: 3
     }
   ],
-
+  'object-curly-spacing': [
+    'warn',
+    'never'
+  ],
   quotes: [
-    1,
+    'error',
     'single'
   ],
   semi: [
-    2,
+    'warn',
     'always'
   ],
-  'semi-spacing': 1,
+  'semi-spacing': 'warn',
   'space-before-blocks': [
-    1,
+    'warn',
     'always'
   ],
   'space-before-function-paren': [
-    1,
+    'error',
     'never'
   ],
   'space-in-parens': [
-    1,
+    'warn',
     'never'
   ],
-  'space-infix-ops': 1,
+  'space-infix-ops': 'warn',
   'space-unary-ops': [
-    2,
+    'warn',
     {
       words: false,
       nonwords: false
@@ -200,7 +203,7 @@ module.exports.stylistic = {
   ],
 
   'spaced-comment': [
-    1,
+    'warn',
     'always',
     {
       markers: ['!'],
