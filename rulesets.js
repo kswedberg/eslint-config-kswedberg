@@ -1,8 +1,8 @@
 
 module.exports.variables = {
-  'no-delete-var': 'warn',
-  'no-undef': 'warn',
-  'no-use-before-define': 'warn',
+  'no-delete-var': 'error',
+  'no-undef': 'error',
+  'no-use-before-define': 'error',
 };
 
 module.exports.possibleErrors = {
@@ -59,29 +59,29 @@ module.exports.stylistic = {
     'warn',
     'never'
   ],
-  'brace-style': 'error',
-  camelcase: 'error',
-  'eol-last': 'error',
+  'brace-style': 'warn',
+  camelcase: 'warn',
+  'eol-last': 'warn',
   'func-style': [
-    'error',
+    'warn',
     'expression'
   ],
   indent: [
-    'error',
+    'warn',
     2
   ],
   'jsx-quotes': [
-    'error',
+    'warn',
     'prefer-single'
   ],
   'key-spacing': [
-    'error',
+    'warn',
     {
       afterColon: true
     }
   ],
   'keyword-spacing': [
-    'error',
+    'warn',
     {
       overrides: {
         'if': {
@@ -128,26 +128,26 @@ module.exports.stylistic = {
     'error',
     5
   ],
-  'new-cap': 'error',
+  'new-cap': 'warn',
   'no-array-constructor': 'warn',
   'no-lonely-if': 'error',
   'no-mixed-spaces-and-tabs': [
-    'error',
+    'warn',
     'smart-tabs'
   ],
   'no-multiple-empty-lines': 'warn',
-  'no-trailing-spaces': 'error',
+  'no-trailing-spaces': 'warn',
   'no-underscore-dangle': [
-    'error',
+    'warn',
     {
       allow: ['_this'],
       allowAfterThis: true
     }
   ],
   'no-unneeded-ternary': 'error',
-  'no-whitespace-before-property': 'error',
+  'no-whitespace-before-property': 'warn',
   'one-var': [
-    'error',
+    'warn',
     {
       initialized: 'never'
     }
@@ -173,11 +173,11 @@ module.exports.stylistic = {
     'never'
   ],
   quotes: [
-    'error',
+    'warn',
     'single'
   ],
   semi: [
-    'warn',
+    'error',
     'always'
   ],
   'semi-spacing': 'warn',
@@ -186,7 +186,7 @@ module.exports.stylistic = {
     'always'
   ],
   'space-before-function-paren': [
-    'error',
+    'warn',
     'never'
   ],
   'space-in-parens': [
