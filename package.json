@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kswedberg",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "A shareable eslint config",
   "main": "index.js",
   "scripts": {},
