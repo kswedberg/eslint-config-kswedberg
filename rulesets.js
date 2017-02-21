@@ -18,13 +18,27 @@ module.exports.possibleErrors = {
 
 module.exports.es6 = {
   'arrow-body-style': [
-    'error',
-    'always'
+    'warn',
+    'as-needed',
+    {
+      requireReturnForObjectLiteral: true
+    }
   ],
+  'arrow-spacing': 'warn',
   'no-class-assign': 'warn',
-  'no-const-assign': 'warn',
   'no-duplicate-imports': 'warn',
   'no-this-before-super': 'warn',
+  'no-useless-concat': 'warn',
+  'prefer-template': 'warn',
+  'rest-spread-spacing': [
+    'warn',
+    'never'
+  ],
+  'template-curly-spacing': [
+    'warn',
+    'never'
+  ],
+  'no-const-assign': 'error',
   'no-confusing-arrow': 'error',
 };
 

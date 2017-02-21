@@ -32,3 +32,15 @@ module.exports = {
 ```
 
 \* Note: eslint supports a few different formats for the `...rc` file, including JavaScript, JSON, and YAML. You may use any format that eslint supports.
+
+## Disabling rules per file or line
+
+I always forget how to do this, so I'm writing it down as a reminder to me. See more at [Configuring ESLint](http://eslint.org/docs/user-guide/configuring)
+
+* Start disabling all rules for a file: `/* eslint-disable */`
+* Enable rules later in same file: `/* eslint-enable */`
+* Disable specific rules: `/* eslint-disable no-alert, no-console */`
+* Disable all rules for current line (comment to the right): `// eslint-disable-line`
+* Disable specific rules for current line: `// eslint-disable-line no-alert, quotes, semi`
+* Disable all rules for next line: `// eslint-disable-next-line`
+* Disable specific rules for next line: `// eslint-disable-next-line no-alert, quotes, semi`
