@@ -17,13 +17,6 @@ module.exports.possibleErrors = {
 };
 
 module.exports.es6 = {
-  'arrow-body-style': [
-    'warn',
-    'as-needed',
-    {
-      requireReturnForObjectLiteral: true
-    }
-  ],
   'arrow-spacing': 'warn',
   'no-class-assign': 'warn',
   'no-duplicate-imports': 'warn',
