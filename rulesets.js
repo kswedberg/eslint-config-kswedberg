@@ -163,9 +163,6 @@ module.exports.stylistic = {
   'quote-props': [
     'warn',
     'as-needed',
-    {
-      keywords: true
-    }
   ],
   'newline-after-var': 'warn',
   'newline-before-return': 'warn',
