@@ -36,6 +36,7 @@ module.exports.es6 = {
 };
 
 module.exports.bestPractices = {
+  'array-callback-return': 'warn',
   curly: [
     'warn',
     'all'
@@ -46,10 +47,12 @@ module.exports.bestPractices = {
       allowPattern: '^[a-z]*_[_a-z]*$'
     }
   ],
+  eqeqeq: ['error', 'smart'],
   'no-caller': 'warn',
   'no-eq-null': 'off',
   'no-invalid-this': 'off',
   'no-multi-str': 'warn',
+  'no-redeclare': 'error',
   'no-with': 'warn',
   'wrap-iife': [
     'error',
