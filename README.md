@@ -6,7 +6,9 @@ Run the following from the project's root:
 
 `npm install eslint-config-kswedberg --save-dev`
 
-In the project's `.eslintrc.js` file* for linting _with_ es6 features enabled:
+Then, add the config to the project's `.eslintrc.js` file.
+
+For linting _with_ es6 features enabled:
 
 ```
 module.exports = {

@@ -44,15 +44,25 @@ module.exports.bestPractices = {
   'dot-notation': [
     'warn',
     {
-      allowPattern: '^[a-z]*_[_a-z]*$'
+      allowPattern: '^[a-z0-9]*_[_a-z0-9]*$'
     }
   ],
   eqeqeq: ['error', 'smart'],
   'no-caller': 'warn',
   'no-eq-null': 'off',
+  'no-extend-native': 'error',
   'no-invalid-this': 'off',
+  'no-multi-spaces': [
+    'warn',
+    {
+      exceptions: [
+        VariableDeclarator: true
+      ]
+    }
+  ]
   'no-multi-str': 'warn',
   'no-redeclare': 'error',
+  'no-useless-escape': 'warn',
   'no-with': 'warn',
   'wrap-iife': [
     'error',
@@ -78,7 +88,10 @@ module.exports.stylistic = {
   ],
   indent: [
     'warn',
-    2
+    2,
+    {
+      MemberExpression: 'off'
+    }
   ],
   'jsx-quotes': [
     'warn',
@@ -146,6 +159,7 @@ module.exports.stylistic = {
     'smart-tabs'
   ],
   'no-multiple-empty-lines': 'warn',
+  'no-nested-ternary': 'warn',
   'no-trailing-spaces': 'warn',
   'no-underscore-dangle': [
     'warn',
@@ -154,7 +168,7 @@ module.exports.stylistic = {
       allowAfterThis: true
     }
   ],
-  'no-unneeded-ternary': 'error',
+  'no-unneeded-ternary': 'warn',
   'no-whitespace-before-property': 'warn',
   'one-var': [
     'warn',
