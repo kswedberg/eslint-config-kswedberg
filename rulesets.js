@@ -55,9 +55,9 @@ module.exports.bestPractices = {
   'no-multi-spaces': [
     'warn',
     {
-      exceptions: [
+      exceptions: {
         VariableDeclarator: true
-      ]
+      }
     }
   ]
   'no-multi-str': 'warn',
