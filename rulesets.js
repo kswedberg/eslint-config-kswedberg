@@ -59,7 +59,7 @@ module.exports.bestPractices = {
         VariableDeclarator: true
       }
     }
-  ]
+  ],
   'no-multi-str': 'warn',
   'no-redeclare': 'error',
   'no-useless-escape': 'warn',
