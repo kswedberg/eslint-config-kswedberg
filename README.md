@@ -6,7 +6,9 @@ Run the following from the project's root:
 
 `npm install eslint-config-kswedberg --save-dev`
 
-In the project's `.eslintrc.js` file* for linting _with_ es6 features enabled:
+Then, add the config to the project's `.eslintrc.js` file.
+
+For linting _with_ es6 features enabled:
 
 ```
 module.exports = {
@@ -44,6 +46,3 @@ I always forget how to do this, so I'm writing it down as a reminder to me. See 
 * Disable specific rules for current line: `// eslint-disable-line no-alert, quotes, semi`
 * Disable all rules for next line: `// eslint-disable-next-line`
 * Disable specific rules for next line: `// eslint-disable-next-line no-alert, quotes, semi`
-
-
-(This is a reverted release because last one should have been major but was minor)
