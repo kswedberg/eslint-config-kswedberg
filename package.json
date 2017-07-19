@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/kswedberg/eslint-config-kswedberg/issues"
   },
-  "homepage": "https://github.com/kswedberg/eslint-config-kswedberg#readme"
+  "homepage": "https://github.com/kswedberg/eslint-config-kswedberg#readme",
+  "peerDependencies": {
+    "eslint": "^4.1.0"
+  },
+  "engines": {
+    "node": ">= 4"
+  }
 }
