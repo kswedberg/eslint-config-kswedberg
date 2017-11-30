@@ -6,6 +6,7 @@ module.exports.variables = {
 };
 
 module.exports.possibleErrors = {
+  'no-await-in-loop': 'warn',
   'no-cond-assign': [
     'warn',
     'except-parens'
@@ -20,9 +21,11 @@ module.exports.es6 = {
   'arrow-spacing': 'warn',
   'no-class-assign': 'warn',
   'no-duplicate-imports': 'warn',
+  'no-return-await': 'warn',
   'no-this-before-super': 'warn',
   'no-useless-concat': 'warn',
   'prefer-template': 'warn',
+  'require-await': 'warn',
   'rest-spread-spacing': [
     'warn',
     'never'
@@ -63,6 +66,7 @@ module.exports.bestPractices = {
   'no-multi-str': 'warn',
   'no-redeclare': 'error',
   'no-useless-escape': 'warn',
+  'no-useless-return': 'warn',
   'no-with': 'warn',
   'wrap-iife': [
     'error',
