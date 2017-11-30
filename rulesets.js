@@ -68,6 +68,12 @@ module.exports.bestPractices = {
   'no-useless-escape': 'warn',
   'no-useless-return': 'warn',
   'no-with': 'warn',
+  'prefer-promise-reject-errors': [
+    'warn',
+    {
+      allowEmptyReject: true
+    }
+  ],
   'wrap-iife': [
     'error',
     'any'
