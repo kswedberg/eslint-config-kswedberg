@@ -161,7 +161,12 @@ module.exports.stylistic = {
     'error',
     5
   ],
-  'new-cap': 'warn',
+  'new-cap': [
+    'warn',
+    {
+      newIsCap: true
+    }
+  ],
   'no-array-constructor': 'warn',
   'no-lonely-if': 'error',
   'no-mixed-spaces-and-tabs': [
