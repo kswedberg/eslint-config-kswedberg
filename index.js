@@ -14,6 +14,8 @@ module.exports = {
     sourceType: 'module',
     ecmaFeatures: {
       impliedStrict: true,
+      experimentalObjectRestSpread: true,
+      generators: false,
     }
   },
   env: {
@@ -23,7 +25,6 @@ module.exports = {
     jquery: true,
   },
   globals: {
-    FM: true,
     Modernizr: false
   },
 
