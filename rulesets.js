@@ -7,10 +7,7 @@ module.exports.variables = {
 
 module.exports.possibleErrors = {
   'no-await-in-loop': 'warn',
-  'no-cond-assign': [
-    'warn',
-    'except-parens'
-  ],
+  'no-cond-assign': ['warn', 'except-parens'],
   'no-empty': 'warn',
   'no-extra-semi': 'warn',
   'no-inner-declarations': 'error',
@@ -34,22 +31,13 @@ module.exports.es6 = {
   'prefer-spread': 'warn',
   'prefer-template': 'warn',
   'require-await': 'off',
-  'rest-spread-spacing': [
-    'warn',
-    'never'
-  ],
-  'template-curly-spacing': [
-    'warn',
-    'never'
-  ],
+  'rest-spread-spacing': ['warn', 'never'],
+  'template-curly-spacing': ['warn', 'never'],
 };
 
 module.exports.bestPractices = {
   'array-callback-return': 'warn',
-  curly: [
-    'warn',
-    'all'
-  ],
+  curly: ['warn', 'all'],
   'dot-notation': [
     'warn',
     {
@@ -58,7 +46,7 @@ module.exports.bestPractices = {
   ],
   eqeqeq: ['error', 'smart'],
   'no-caller': 'warn',
-  'no-else-return': ['error', { allowElseIf: true}],
+  'no-else-return': ['error', {allowElseIf: true}],
   'no-empty-function': 'warn',
   'no-empty-pattern': 'warn',
   'no-eq-null': 'off',
@@ -79,38 +67,47 @@ module.exports.bestPractices = {
   ],
   'no-multi-str': 'warn',
   'no-new-wrappers': 'error',
-  'no-param-reassign': ['error', {
-    props: true,
-    ignorePropertyModificationsFor: [
-      'acc', // for reduce accumulators
-      'prev', // for reduce accumulators
-      'previous', // for reduce accumulators
-      'event', // for e.returnvalue
-      'req', // for Express requests
-      'request', // for Express requests
-      'res', // for Express responses
-      'response', // for Express responses
-    ]
-  }],
+  'no-param-reassign': [
+    'error',
+    {
+      props: true,
+      ignorePropertyModificationsFor: [
+        'acc', // for reduce accumulators
+        'prev', // for reduce accumulators
+        'previous', // for reduce accumulators
+        'event', // for e.returnvalue
+        'req', // for Express requests
+        'request', // for Express requests
+        'res', // for Express responses
+        'response', // for Express responses
+      ]
+    }
+  ],
   'no-proto': 'error',
   'no-redeclare': 'error',
-  'no-restricted-properties': ['error', {
-    object: 'arguments',
-    property: 'callee',
-    message: 'arguments.callee is deprecated',
-  }, {
-    object: 'window',
-    property: 'isFinite',
-    message: 'Please use Number.isFinite instead',
-  }, {
-    object: 'window',
-    property: 'isNaN',
-    message: 'Please use Number.isNaN instead',
-  }, {
-    object: 'Math',
-    property: 'pow',
-    message: 'Use the exponentiation operator (**) instead.',
-  }],
+  'no-restricted-properties': [
+    'error',
+    {
+      object: 'arguments',
+      property: 'callee',
+      message: 'arguments.callee is deprecated',
+    },
+    {
+      object: 'window',
+      property: 'isFinite',
+      message: 'Please use Number.isFinite instead',
+    },
+    {
+      object: 'window',
+      property: 'isNaN',
+      message: 'Please use Number.isNaN instead',
+    },
+    {
+      object: 'Math',
+      property: 'pow',
+      message: 'Use the exponentiation operator (**) instead.',
+    }
+  ],
   'no-return-assign': ['error', 'always'],
   'no-script-url': 'error',
   'no-self-assign': 'error',
@@ -118,10 +115,13 @@ module.exports.bestPractices = {
   'no-sequences': 'error',
   'no-throw-literal': 'error',
   'no-unreachable': 'error',
-  'no-unused-expressions': ['error', {
-    allowShortCircuit: false,
-    allowTernary: false,
-  }],
+  'no-unused-expressions': [
+    'error',
+    {
+      allowShortCircuit: false,
+      allowTernary: false,
+    }
+  ],
   'no-useless-escape': 'warn',
   'no-useless-return': 'warn',
   'no-void': 'error',
@@ -132,33 +132,20 @@ module.exports.bestPractices = {
       allowEmptyReject: true
     }
   ],
-  'wrap-iife': [
-    'error',
-    'any'
-  ],
-  yoda: [
-    'warn',
-    'never'
-  ],
+  'wrap-iife': ['error', 'any'],
+  yoda: ['warn', 'never'],
 };
 
 module.exports.stylistic = {
   'array-bracket-newline': ['warn', {multiline: true}],
   'array-element-newline': ['warn', {multiline: true}],
-  'array-bracket-spacing': [
-    'warn',
-    'never'
-  ],
+  'array-bracket-spacing': ['warn', 'never'],
   'brace-style': 'warn',
-  camelcase: ['warn', {properties: never}],
-  'comma-spacing': ['error', { before: false, after: true }],
+  camelcase: ['warn', {properties: 'never'}],
+  'comma-spacing': ['error', {before: false, after: true}],
   'eol-last': 'warn',
   'func-call-spacing': ['warn', 'never'],
-  'func-style': [
-    'warn',
-    'expression'
-  ],
-  'id-blacklist': ['e'],
+  'func-style': ['warn', 'expression'],
   'implicit-arrow-linebreak': ['error', 'beside'],
   indent: [
     'warn',
@@ -167,10 +154,7 @@ module.exports.stylistic = {
       MemberExpression: 'off'
     }
   ],
-  'jsx-quotes': [
-    'warn',
-    'prefer-single'
-  ],
+  'jsx-quotes': ['warn', 'prefer-single'],
   'key-spacing': [
     'warn',
     {
@@ -182,53 +166,50 @@ module.exports.stylistic = {
     'warn',
     {
       overrides: {
-        'if': {
+        if: {
           after: true
         },
-        'else': {
+        else: {
           after: true
         },
-        'for': {
+        for: {
           after: true
         },
-        'while': {
+        while: {
           after: true
         },
-        'do': {
+        do: {
           after: true
         },
-        'switch': {
+        switch: {
           after: true
         },
-        'case': {
+        case: {
           after: true
         },
-        'return': {
+        return: {
           after: true
         },
-        'try': {
+        try: {
           after: true
         },
-        'catch': {
+        catch: {
           after: true
         },
-        'typeof': {
+        typeof: {
           after: true
         }
       }
     }
   ],
-  'linebreak-style': [
+  'linebreak-style': ['warn', 'unix'],
+  'around-directive': [
     'warn',
-    'unix'
+    {
+      after: 'always',
+    }
   ],
-  'around-directive': ['warn', {
-    after: 'always',
-  }],
-  'max-params': [
-    'error',
-    5
-  ],
+  'max-params': ['error', 5],
   'new-cap': [
     'warn',
     {
@@ -238,10 +219,7 @@ module.exports.stylistic = {
   'new-parens': 'warn',
   'no-array-constructor': 'warn',
   'no-lonely-if': 'error',
-  'no-mixed-spaces-and-tabs': [
-    'warn',
-    'smart-tabs'
-  ],
+  'no-mixed-spaces-and-tabs': ['warn', 'smart-tabs'],
   'no-multiple-empty-lines': 'warn',
   'no-new-object': 'warn',
   'no-nested-ternary': 'warn',
@@ -262,10 +240,7 @@ module.exports.stylistic = {
       initialized: 'never'
     }
   ],
-  'quote-props': [
-    'warn',
-    'as-needed',
-  ],
+  'quote-props': ['warn', 'as-needed',],
   'newline-after-var': 'warn',
   'newline-before-return': 'warn',
   'newline-per-chained-call': [
@@ -274,31 +249,13 @@ module.exports.stylistic = {
       ignoreChainWithDepth: 3
     }
   ],
-  'object-curly-spacing': [
-    'warn',
-    'never'
-  ],
-  quotes: [
-    'warn',
-    'single'
-  ],
-  semi: [
-    'error',
-    'always'
-  ],
+  'object-curly-spacing': ['warn', 'never'],
+  quotes: ['warn', 'single'],
+  semi: ['error', 'always'],
   'semi-spacing': 'warn',
-  'space-before-blocks': [
-    'warn',
-    'always'
-  ],
-  'space-before-function-paren': [
-    'warn',
-    'never'
-  ],
-  'space-in-parens': [
-    'warn',
-    'never'
-  ],
+  'space-before-blocks': ['warn', 'always'],
+  'space-before-function-paren': ['warn', 'never'],
+  'space-in-parens': ['warn', 'never'],
   'space-infix-ops': 'warn',
   'space-unary-ops': [
     'warn',
