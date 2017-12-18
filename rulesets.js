@@ -72,14 +72,18 @@ module.exports.bestPractices = {
     {
       props: true,
       ignorePropertyModificationsFor: [
-        'acc', // for reduce accumulators
-        'prev', // for reduce accumulators
-        'previous', // for reduce accumulators
-        'event', // for e.returnvalue
-        'req', // for Express requests
-        'request', // for Express requests
-        'res', // for Express responses
-        'response', // for Express responses
+        // for reduce accumulators
+        'acc',
+        'prev',
+        'previous',
+        // for event.returnvalue
+        'event',
+        // for Express requests
+        'req',
+        'request',
+        // for Express responses
+        'res',
+        'response',
       ]
     }
   ],
@@ -138,7 +142,6 @@ module.exports.bestPractices = {
 
 module.exports.stylistic = {
   'array-bracket-newline': ['warn', {multiline: true}],
-  'array-element-newline': ['warn', {multiline: true}],
   'array-bracket-spacing': ['warn', 'never'],
   'brace-style': 'warn',
   camelcase: ['warn', {properties: 'never'}],
@@ -203,9 +206,10 @@ module.exports.stylistic = {
     }
   ],
   'linebreak-style': ['warn', 'unix'],
-  'around-directive': [
+  'lines-around-directive': [
     'warn',
     {
+      before: 'always',
       after: 'always',
     }
   ],
@@ -240,7 +244,7 @@ module.exports.stylistic = {
       initialized: 'never'
     }
   ],
-  'quote-props': ['warn', 'as-needed',],
+  'quote-props': ['warn', 'as-needed'],
   'newline-after-var': 'warn',
   'newline-before-return': 'warn',
   'newline-per-chained-call': [
