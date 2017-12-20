@@ -71,21 +71,7 @@ module.exports.bestPractices = {
   'no-param-reassign': [
     'error',
     {
-      props: false,
-      ignorePropertyModificationsFor: [
-        // for reduce accumulators
-        'acc',
-        'prev',
-        'previous',
-        // for event.returnvalue
-        'event',
-        // for Express requests
-        'req',
-        'request',
-        // for Express responses
-        'res',
-        'response',
-      ]
+      props: false
     }
   ],
   'no-proto': 'error',
