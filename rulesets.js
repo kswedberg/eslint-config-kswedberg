@@ -71,7 +71,7 @@ module.exports.bestPractices = {
   'no-param-reassign': [
     'error',
     {
-      props: true,
+      props: false,
       ignorePropertyModificationsFor: [
         // for reduce accumulators
         'acc',
