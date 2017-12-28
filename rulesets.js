@@ -15,10 +15,10 @@ module.exports.possibleErrors = {
 };
 
 module.exports.es6 = {
-  'arrow-body-style': ['warn', 'as-needed'],
+  'arrow-body-style': ['warn', 'as-needed', {requireReturnForObjectLiteral: true}],
   'arrow-spacing': 'warn',
   'no-class-assign': 'warn',
-  'no-confusing-arrow': 'error',
+  'no-confusing-arrow': ['error', {allowParens: true}],
   'no-const-assign': 'error',
   'no-duplicate-imports': 'warn',
   'no-return-await': 'warn',
