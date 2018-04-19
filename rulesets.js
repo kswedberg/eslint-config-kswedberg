@@ -15,7 +15,7 @@ module.exports.possibleErrors = {
 };
 
 module.exports.es6 = {
-  'arrow-body-style': ['warn', 'as-needed', {requireReturnForObjectLiteral: true}],
+  'arrow-body-style': 'off',
   'arrow-spacing': 'warn',
   'no-class-assign': 'warn',
   'no-confusing-arrow': ['error', {allowParens: true}],
