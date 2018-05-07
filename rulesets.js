@@ -128,7 +128,7 @@ module.exports.bestPractices = {
 };
 
 module.exports.stylistic = {
-  'array-bracket-newline': ['warn', {multiline: true}],
+  'array-bracket-newline': ['warn', 'consistent'],
   'array-bracket-spacing': ['warn', 'never'],
   'brace-style': 'warn',
   camelcase: ['warn', {properties: 'never'}],
