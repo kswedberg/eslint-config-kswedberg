@@ -1,5 +1,5 @@
-var rulesets = require('./rulesets');
-var rules = Object.assign(
+const rulesets = require('./rulesets');
+const rules = Object.assign(
   {},
   rulesets.variables,
   rulesets.possibleErrors,
@@ -10,7 +10,7 @@ var rules = Object.assign(
 
 module.exports = {
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 2017,
     sourceType: 'module',
     ecmaFeatures: {
       impliedStrict: true,
