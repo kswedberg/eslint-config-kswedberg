@@ -130,12 +130,18 @@ module.exports.bestPractices = {
 module.exports.stylistic = {
   'array-bracket-newline': ['warn', 'consistent'],
   'array-bracket-spacing': ['warn', 'never'],
+  'array-element-newline': ['warn', 'consistent'],
   'brace-style': 'warn',
-  camelcase: ['warn', {properties: 'never'}],
+  camelcase: ['warn', {
+    properties: 'never',
+    ignoreDestructuring: true,
+  }],
   'comma-spacing': ['error', {before: false, after: true}],
   'eol-last': 'warn',
   'func-call-spacing': ['warn', 'never'],
+  'func-name-matching': 'warn',
   'func-style': ['warn', 'expression'],
+  'function-paren-newline': ['warn', 'consistent'],
   'implicit-arrow-linebreak': ['error', 'beside'],
   indent: [
     'warn',
@@ -240,6 +246,7 @@ module.exports.stylistic = {
       ignoreChainWithDepth: 3
     }
   ],
+  'object-curly-newline': ['warn', {consistent: true}],
   'object-curly-spacing': ['warn', 'never'],
   quotes: ['warn', 'single'],
   semi: ['error', 'always'],
