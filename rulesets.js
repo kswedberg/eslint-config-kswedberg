@@ -283,3 +283,56 @@ module.exports.stylistic = {
   ],
 
 };
+
+module.exports.vue = {
+  'vue/attribute-hyphenation': 'off',
+  'vue/html-self-closing': [
+    'warn',
+    {
+      svg: 'any',
+    }
+  ],
+  'vue/html-closing-bracket-newline': 'warn',
+  'vue/html-indent': 'warn',
+  'vue/max-attributes-per-line': [
+    'warn', {
+      singleline: 3,
+      multiline: {
+        max: 1,
+        allowFirstLine: false,
+      },
+    },
+  ],
+  'vue/multiline-html-element-content-newline': 'warn',
+  'vue/no-spaces-around-equal-signs-in-attribute': 'warn',
+  'vue/singleline-html-element-content-newline': 'off',
+  'vue/this-in-template': 'error',
+  'vue/v-bind-style': 'warn',
+  'vue/v-on-style': 'warn',
+  'vue/v-on-function-call': ['warn', 'never'],
+  'vue/attributes-order': [
+    'error',
+    {
+      order: [
+        [
+          'CONDITIONALS',
+          'DEFINITION',
+          'LIST_RENDERING',
+        ],
+        [
+          'TWO_WAY_BINDING',
+          'OTHER_DIRECTIVES',
+          'RENDER_MODIFIERS',
+          'CONTENT',
+        ],
+        'EVENTS',
+        [
+          'UNIQUE',
+          'GLOBAL',
+          'OTHER_ATTR',
+        ]
+
+      ]
+    }
+  ]
+};
