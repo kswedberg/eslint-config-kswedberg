@@ -137,6 +137,15 @@ module.exports.stylistic = {
     properties: 'never',
     ignoreDestructuring: true,
   }],
+  'comma-dangle': [
+    'warn', {
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+      imports: 'never',
+      exports: 'never',
+      functions: 'ignore'
+    }
+  ],
   'comma-spacing': ['error', {before: false, after: true}],
   'eol-last': 'warn',
   'func-call-spacing': ['warn', 'never'],
