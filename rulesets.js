@@ -157,7 +157,7 @@ module.exports.stylistic = {
     'warn',
     2,
     {
-      MemberExpression: 'off'
+      MemberExpression: 0
     }
   ],
   'jsx-quotes': ['warn', 'prefer-single'],
