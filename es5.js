@@ -1,5 +1,5 @@
-var rulesets = require('./rulesets');
-var rules = Object.assign(
+const rulesets = require('./rulesets');
+const rules = Object.assign(
   {},
   rulesets.variables,
   rulesets.possibleErrors,
@@ -9,7 +9,7 @@ var rules = Object.assign(
 
 module.exports = {
   parserOptions: {
-    ecmaVersion: 5
+    ecmaVersion: 5,
   },
   env: {
     browser: true,
@@ -18,8 +18,8 @@ module.exports = {
   },
   globals: {
     FM: true,
-    Modernizr: false
+    Modernizr: false,
   },
 
-  rules: rules
+  rules: rules,
 };

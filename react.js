@@ -14,11 +14,11 @@ module.exports = {
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
-      impliedStrict: true
-    }
+      impliedStrict: true,
+    },
   },
   plugins: [
-    'react'
+    'react',
   ],
   env: {
     browser: true,
@@ -27,8 +27,8 @@ module.exports = {
   },
   globals: {
     FM: true,
-    Modernizr: false
+    Modernizr: false,
   },
 
-  rules: rules
+  rules: rules,
 };

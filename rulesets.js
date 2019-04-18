@@ -43,8 +43,8 @@ module.exports.bestPractices = {
   'dot-notation': [
     'warn',
     {
-      allowPattern: '^[a-z0-9]*_[_a-z0-9]*$'
-    }
+      allowPattern: '^[a-z0-9]*_[_a-z0-9]*$',
+    },
   ],
   eqeqeq: ['error', 'smart'],
   'no-caller': 'warn',
@@ -63,17 +63,17 @@ module.exports.bestPractices = {
     'warn',
     {
       exceptions: {
-        VariableDeclarator: true
-      }
-    }
+        VariableDeclarator: true,
+      },
+    },
   ],
   'no-multi-str': 'warn',
   'no-new-wrappers': 'error',
   'no-param-reassign': [
     'error',
     {
-      props: false
-    }
+      props: false,
+    },
   ],
   'no-proto': 'error',
   'no-redeclare': 'error',
@@ -98,7 +98,7 @@ module.exports.bestPractices = {
       object: 'Math',
       property: 'pow',
       message: 'Use the exponentiation operator (**) instead.',
-    }
+    },
   ],
   'no-return-assign': ['error', 'always'],
   'no-script-url': 'error',
@@ -112,7 +112,7 @@ module.exports.bestPractices = {
     {
       allowShortCircuit: false,
       allowTernary: false,
-    }
+    },
   ],
   'no-useless-escape': 'warn',
   'no-useless-return': 'warn',
@@ -121,8 +121,8 @@ module.exports.bestPractices = {
   'prefer-promise-reject-errors': [
     'warn',
     {
-      allowEmptyReject: true
-    }
+      allowEmptyReject: true,
+    },
   ],
   'wrap-iife': ['error', 'any'],
   yoda: ['warn', 'never'],
@@ -143,8 +143,8 @@ module.exports.stylistic = {
       objects: 'always-multiline',
       imports: 'never',
       exports: 'never',
-      functions: 'ignore'
-    }
+      functions: 'ignore',
+    },
   ],
   'comma-spacing': ['error', {before: false, after: true}],
   'eol-last': 'warn',
@@ -157,56 +157,56 @@ module.exports.stylistic = {
     'warn',
     2,
     {
-      MemberExpression: 0
-    }
+      MemberExpression: 0,
+    },
   ],
   'jsx-quotes': ['warn', 'prefer-single'],
   'key-spacing': [
     'warn',
     {
       beforeColon: false,
-      afterColon: true
-    }
+      afterColon: true,
+    },
   ],
   'keyword-spacing': [
     'warn',
     {
       overrides: {
         if: {
-          after: true
+          after: true,
         },
         else: {
-          after: true
+          after: true,
         },
         for: {
-          after: true
+          after: true,
         },
         while: {
-          after: true
+          after: true,
         },
         do: {
-          after: true
+          after: true,
         },
         switch: {
-          after: true
+          after: true,
         },
         case: {
-          after: true
+          after: true,
         },
         return: {
-          after: true
+          after: true,
         },
         try: {
-          after: true
+          after: true,
         },
         catch: {
-          after: true
+          after: true,
         },
         typeof: {
-          after: true
-        }
-      }
-    }
+          after: true,
+        },
+      },
+    },
   ],
   'linebreak-style': ['warn', 'unix'],
   'lines-around-directive': [
@@ -214,14 +214,14 @@ module.exports.stylistic = {
     {
       before: 'always',
       after: 'always',
-    }
+    },
   ],
   'max-params': ['error', 5],
   'new-cap': [
     'warn',
     {
-      newIsCap: true
-    }
+      newIsCap: true,
+    },
   ],
   'new-parens': 'warn',
   'no-array-constructor': 'warn',
@@ -237,15 +237,15 @@ module.exports.stylistic = {
       allow: ['_this'],
       allowAfterThis: true,
       enforceInMethodNames: false,
-    }
+    },
   ],
   'no-unneeded-ternary': 'warn',
   'no-whitespace-before-property': 'warn',
   'one-var': [
     'warn',
     {
-      initialized: 'never'
-    }
+      initialized: 'never',
+    },
   ],
   'quote-props': ['warn', 'as-needed'],
   'newline-after-var': 'warn',
@@ -253,8 +253,8 @@ module.exports.stylistic = {
   'newline-per-chained-call': [
     'warn',
     {
-      ignoreChainWithDepth: 3
-    }
+      ignoreChainWithDepth: 3,
+    },
   ],
   'object-curly-newline': ['warn', {consistent: true}],
   'object-curly-spacing': ['warn', 'never'],
@@ -269,8 +269,8 @@ module.exports.stylistic = {
     'warn',
     {
       words: false,
-      nonwords: false
-    }
+      nonwords: false,
+    },
   ],
 
   'spaced-comment': [
@@ -278,8 +278,8 @@ module.exports.stylistic = {
     'always',
     {
       markers: ['!'],
-      exceptions: ['*', '-', '+']
-    }
+      exceptions: ['*', '-', '+'],
+    },
   ],
 
 };
@@ -290,7 +290,7 @@ module.exports.vue = {
     'warn',
     {
       svg: 'any',
-    }
+    },
   ],
   'vue/html-closing-bracket-newline': 'warn',
   'vue/html-indent': 'warn',
@@ -330,9 +330,9 @@ module.exports.vue = {
           'UNIQUE',
           'GLOBAL',
           'OTHER_ATTR',
-        ]
+        ],
 
-      ]
-    }
-  ]
+      ],
+    },
+  ],
 };

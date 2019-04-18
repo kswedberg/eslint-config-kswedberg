@@ -16,17 +16,17 @@ const rules = Object.assign(
 
 module.exports = {
   extends: [
-    'plugin:vue/essential'
+    'plugin:vue/essential',
   ],
   parserOptions: {
     ecmaVersion: 2019,
     sourceType: 'module',
     ecmaFeatures: {
-      impliedStrict: true
-    }
+      impliedStrict: true,
+    },
   },
   plugins: [
-    'vue'
+    'vue',
   ],
   env: {
     browser: true,
@@ -34,5 +34,5 @@ module.exports = {
     es6: true,
   },
 
-  rules: rules
+  rules: rules,
 };

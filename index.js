@@ -15,7 +15,7 @@ module.exports = {
     ecmaFeatures: {
       impliedStrict: true,
       generators: false,
-    }
+    },
   },
   env: {
     browser: true,
@@ -24,8 +24,8 @@ module.exports = {
     jquery: true,
   },
   globals: {
-    Modernizr: false
+    Modernizr: false,
   },
 
-  rules: rules
+  rules: rules,
 };
