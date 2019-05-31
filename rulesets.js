@@ -241,6 +241,36 @@ module.exports.stylistic = {
   ],
   'no-unneeded-ternary': 'warn',
   'no-whitespace-before-property': 'warn',
+  'padding-line-between-statements': [
+    'warn',
+    {
+      blankLine: 'always',
+      prev: ['const', 'let', 'var'],
+      next: '*',
+    },
+    {
+      blankLine: 'any',
+      prev: ['const', 'let', 'var'],
+      next: ['const', 'let', 'var'],
+    },
+
+    {
+      blankLine: 'always',
+      prev: '*',
+      next: 'return',
+    },
+
+    {
+      blankLine: 'always',
+      prev: 'import',
+      next: '*',
+    },
+    {
+      blankLine: 'any',
+      prev: 'import',
+      next: 'import',
+    },
+  ],
   'one-var': [
     'warn',
     {
@@ -248,8 +278,6 @@ module.exports.stylistic = {
     },
   ],
   'quote-props': ['warn', 'as-needed'],
-  'newline-after-var': 'warn',
-  'newline-before-return': 'warn',
   'newline-per-chained-call': [
     'warn',
     {
