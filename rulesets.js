@@ -11,6 +11,8 @@ module.exports.possibleErrors = {
   'no-dupe-args': 'warn',
   'no-dupe-keys': 'warn',
   'no-empty': 'warn',
+  'no-empty-pattern': 'warn',
+  'no-extra-boolean-cast': 'warn',
   'no-extra-parens': [
     'warn',
     'all',
@@ -24,6 +26,7 @@ module.exports.possibleErrors = {
   'no-invalid-regexp': 'error',
   'no-obj-calls': 'warn',
   'no-regex-spaces': 'warn',
+  'no-unsafe-finally': 'warn',
 };
 
 module.exports.es6 = {
@@ -69,6 +72,7 @@ module.exports.bestPractices = {
   'no-eval': 'error',
   'no-extend-native': 'error',
   'no-extra-bind': 'error',
+  'no-implied-eval': 'error',
   'no-invalid-this': 'off',
   'no-iterator': 'error',
   'no-lone-blocks': 'warn',
