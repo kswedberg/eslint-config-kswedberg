@@ -1,17 +1,29 @@
-
 module.exports.variables = {
   'no-delete-var': 'error',
   'no-undef': 'error',
+  'no-undef-init': 'warn',
   'no-use-before-define': 'error',
 };
 
 module.exports.possibleErrors = {
   'no-await-in-loop': 'warn',
   'no-cond-assign': ['warn', 'except-parens'],
+  'no-dupe-args': 'warn',
+  'no-dupe-keys': 'warn',
   'no-empty': 'warn',
+  'no-extra-parens': [
+    'warn',
+    'all',
+    {
+      nestedBinaryExpressions: false,
+      ignoreJSX: 'all',
+    },
+  ],
   'no-extra-semi': 'warn',
   'no-inner-declarations': 'error',
+  'no-invalid-regexp': 'error',
   'no-obj-calls': 'warn',
+  'no-regex-spaces': 'warn',
 };
 
 module.exports.es6 = {
@@ -21,6 +33,7 @@ module.exports.es6 = {
   'no-class-assign': 'warn',
   'no-confusing-arrow': ['error', {allowParens: true}],
   'no-const-assign': 'error',
+  'no-import-assign': 'warn',
   'no-duplicate-imports': 'warn',
   'no-return-await': 'warn',
   'no-this-before-super': 'warn',
@@ -32,7 +45,7 @@ module.exports.es6 = {
   'prefer-rest-params': 'warn',
   'prefer-spread': 'warn',
   'prefer-template': 'warn',
-  'require-await': 'off',
+  'require-await': 'warn',
   'rest-spread-spacing': ['warn', 'never'],
   'template-curly-spacing': ['warn', 'never'],
 };
@@ -40,6 +53,7 @@ module.exports.es6 = {
 module.exports.bestPractices = {
   'array-callback-return': 'warn',
   curly: ['warn', 'all'],
+  'dot-location': ['warn', 'property'],
   'dot-notation': [
     'warn',
     {
@@ -157,6 +171,7 @@ module.exports.stylistic = {
     'warn',
     2,
     {
+      ignoreComments: true,
       MemberExpression: 0,
     },
   ],
