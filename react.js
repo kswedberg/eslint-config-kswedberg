@@ -1,22 +1,12 @@
 const rulesets = require('./rulesets');
-const rules = Object.assign(
-  {},
-  rulesets.variables,
-  rulesets.possibleErrors,
-  rulesets.es6,
-  rulesets.bestPractices,
-  rulesets.stylistic
-);
+const config = require('./index.js');
 
-module.exports = {
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-      impliedStrict: true,
-    },
-  },
+config.parserOptions.ecmaFeatures = {
+  jsx: true,
+  impliedStrict: true,
+};
+
+module.exports = Object.assign(config, {
   plugins: [
     'react',
   ],
@@ -25,10 +15,4 @@ module.exports = {
     node: true,
     es6: true,
   },
-  globals: {
-    FM: true,
-    Modernizr: false,
-  },
-
-  rules: rules,
-};
+});
