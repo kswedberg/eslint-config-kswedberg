@@ -2,29 +2,15 @@
 // vue add @vue/cli-plugin-eslint
 // or
 // yarn add -D eslint eslint-plugin-vue
+const config = require('./index.js');
+const {vue} = require('./rulesets');
 
-const rulesets = require('./rulesets');
-const rules = Object.assign(
-  {},
-  rulesets.variables,
-  rulesets.possibleErrors,
-  rulesets.es6,
-  rulesets.bestPractices,
-  rulesets.stylistic,
-  rulesets.vue,
-);
+Object.assign(config.rules, vue);
 
-module.exports = {
+module.exports = Object.assign(config, {
   extends: [
     'plugin:vue/essential',
   ],
-  parserOptions: {
-    ecmaVersion: 2019,
-    sourceType: 'module',
-    ecmaFeatures: {
-      impliedStrict: true,
-    },
-  },
   plugins: [
     'vue',
   ],
@@ -33,6 +19,4 @@ module.exports = {
     node: true,
     es6: true,
   },
-
-  rules: rules,
-};
+});
