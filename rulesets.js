@@ -59,9 +59,7 @@ module.exports.bestPractices = {
   'dot-location': ['warn', 'property'],
   'dot-notation': [
     'warn',
-    {
-      allowPattern: '^[a-z0-9]*_[_a-z0-9]*$',
-    },
+    {allowPattern: '^[a-z0-9]*_[_a-z0-9]*$'},
   ],
   eqeqeq: ['error', 'smart'],
   'no-caller': 'warn',
@@ -79,19 +77,13 @@ module.exports.bestPractices = {
   'no-loop-func': 'warn',
   'no-multi-spaces': [
     'warn',
-    {
-      exceptions: {
-        VariableDeclarator: true,
-      },
-    },
+    {exceptions: {VariableDeclarator: true}},
   ],
   'no-multi-str': 'warn',
   'no-new-wrappers': 'error',
   'no-param-reassign': [
     'error',
-    {
-      props: false,
-    },
+    {props: false},
   ],
   'no-proto': 'error',
   'no-redeclare': 'error',
@@ -138,9 +130,7 @@ module.exports.bestPractices = {
   'no-with': 'warn',
   'prefer-promise-reject-errors': [
     'warn',
-    {
-      allowEmptyReject: true,
-    },
+    {allowEmptyReject: true},
   ],
   'wrap-iife': ['error', 'any'],
   yoda: ['warn', 'never'],
@@ -177,6 +167,7 @@ module.exports.stylistic = {
     {
       ignoreComments: true,
       MemberExpression: 0,
+      ignoredNodes: ['TemplateLiteral'],
     },
   ],
   'jsx-quotes': ['warn', 'prefer-single'],
@@ -191,39 +182,17 @@ module.exports.stylistic = {
     'warn',
     {
       overrides: {
-        if: {
-          after: true,
-        },
-        else: {
-          after: true,
-        },
-        for: {
-          after: true,
-        },
-        while: {
-          after: true,
-        },
-        do: {
-          after: true,
-        },
-        switch: {
-          after: true,
-        },
-        case: {
-          after: true,
-        },
-        return: {
-          after: true,
-        },
-        try: {
-          after: true,
-        },
-        catch: {
-          after: true,
-        },
-        typeof: {
-          after: true,
-        },
+        if: {after: true},
+        else: {after: true},
+        for: {after: true},
+        while: {after: true},
+        do: {after: true},
+        switch: {after: true},
+        case: {after: true},
+        return: {after: true},
+        try: {after: true},
+        catch: {after: true},
+        typeof: {after: true},
       },
     },
   ],
@@ -238,9 +207,7 @@ module.exports.stylistic = {
   'max-params': ['error', 5],
   'new-cap': [
     'warn',
-    {
-      newIsCap: true,
-    },
+    {newIsCap: true},
   ],
   'new-parens': 'warn',
   'no-array-constructor': 'warn',
@@ -292,18 +259,14 @@ module.exports.stylistic = {
   ],
   'one-var': [
     'warn',
-    {
-      initialized: 'never',
-    },
+    {initialized: 'never'},
   ],
   'quote-props': ['warn', 'as-needed'],
   'newline-per-chained-call': [
     'warn',
-    {
-      ignoreChainWithDepth: 3,
-    },
+    {ignoreChainWithDepth: 3},
   ],
-  'object-curly-newline': ['warn', {consistent: true}],
+  'object-curly-newline': ['warn', {minProperties: 4, multiline: true}],
   'object-curly-spacing': ['warn', 'never'],
   quotes: ['warn', 'single'],
   semi: ['error', 'always'],
@@ -335,9 +298,7 @@ module.exports.vue = {
   'vue/attribute-hyphenation': 'off',
   'vue/html-self-closing': [
     'warn',
-    {
-      svg: 'any',
-    },
+    {svg: 'any'},
   ],
   'vue/html-closing-bracket-newline': 'warn',
   'vue/html-indent': 'warn',
