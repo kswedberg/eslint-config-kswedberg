@@ -266,7 +266,7 @@ module.exports.stylistic = {
     'warn',
     {ignoreChainWithDepth: 3},
   ],
-  'object-curly-newline': ['warn', {minProperties: 4, multiline: true}],
+  'object-curly-newline': ['warn', {consistent: true}],
   'object-curly-spacing': ['warn', 'never'],
   quotes: ['warn', 'single'],
   semi: ['error', 'always'],
