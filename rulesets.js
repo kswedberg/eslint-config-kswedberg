@@ -18,6 +18,7 @@ module.exports.possibleErrors = {
     'all',
     {
       nestedBinaryExpressions: false,
+      enforceForArrowConditionals: false,
       ignoreJSX: 'all',
     },
   ],
