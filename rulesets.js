@@ -312,13 +312,29 @@ module.exports.vue = {
       },
     },
   ],
+  // 'vue/mustache-interpolation-spacing': 'warn',
   'vue/multiline-html-element-content-newline': 'warn',
+  'vue/next-tick-style': ['warn', 'promise'],
+  'vue/no-duplicate-attr-inheritance': 'warn',
+  'vue/no-static-inline-styles': 'warn',
+  'vue/no-invalid-model-keys': 'warn',
+  'vue/no-multi-spaces': 'warn',
+  'vue/no-reserved-component-names': 'warn',
   'vue/no-spaces-around-equal-signs-in-attribute': 'warn',
+  'vue/no-template-target-blank': 'warn',
+  'vue/prop-name-casing': 'warn',
+  'vue/require-default-prop': 'warn',
+  'vue/require-prop-types': 'warn',
   'vue/singleline-html-element-content-newline': 'off',
   'vue/this-in-template': 'error',
   'vue/v-bind-style': 'warn',
-  'vue/v-on-style': 'warn',
   'vue/v-on-function-call': ['warn', 'never'],
+  'vue/v-on-style': 'warn',
+  'vue/valid-next-tick': 'warn',
+
+  'vue/component-tags-order': ['error', {
+    order: ['template', 'script', 'style'],
+  }],
   'vue/attributes-order': [
     'error',
     {
@@ -340,7 +356,46 @@ module.exports.vue = {
           'GLOBAL',
           'OTHER_ATTR',
         ],
+      ],
+    },
+  ],
+  'vue/order-in-components': [
+    'warn', {
+      order: [
+        'el',
+        'name',
+        'inheritAttrs',
+        'layout',
 
+        ['extends', 'provide', 'inject', 'propsData'],
+
+        ['key', 'parent', 'functional', 'delimiters', 'comments'],
+        ['asyncData', 'fetch'],
+        'fetchOnServer',
+        ['components', 'directives', 'filters'],
+        ['mixins', 'props'],
+        'model',
+        'data',
+        'computed',
+
+        'middleware',
+        'validate',
+
+        'scrollToTop',
+        'transition',
+        'loading',
+
+        'emits',
+        'setup',
+        'head',
+
+        'watchQuery',
+        'watch',
+
+        'LIFECYCLE_HOOKS',
+        'methods',
+        ['template', 'render'],
+        'renderError',
       ],
     },
   ],
