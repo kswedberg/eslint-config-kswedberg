@@ -305,10 +305,11 @@ module.exports.vue = {
   'vue/html-indent': 'warn',
   'vue/max-attributes-per-line': [
     'warn', {
-      singleline: 3,
+      singleline: {
+        max: 3,
+      },
       multiline: {
         max: 1,
-        allowFirstLine: false,
       },
     },
   ],

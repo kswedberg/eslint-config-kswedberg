@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/kswedberg/eslint-config-kswedberg#readme",
   "peerDependencies": {
-    "eslint": ">=6.0.0"
+    "eslint": ">=8.0.0"
   },
   "engines": {
     "node": ">= 6"
