@@ -15,7 +15,6 @@ module.exports = Object.assign(config, {
     'vue',
   ],
   env: {
-    browser: true,
     node: true,
     es6: true,
   },

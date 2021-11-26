@@ -296,13 +296,40 @@ module.exports.stylistic = {
 };
 
 module.exports.vue = {
+  'vue/array-bracket-newline': ['warn', 'consistent'],
+  'vue/array-bracket-spacing': ['warn', 'never'],
   'vue/attribute-hyphenation': 'off',
+  'vue/brace-style': 'warn',
+  'vue/comma-dangle': [
+    'warn', {
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+
+      functions: 'ignore',
+    },
+  ],
+  'vue/comma-spacing': ['error', {before: false, after: true}],
+  'vue/custom-event-name-casing': 'warn',
+  'vue/dot-location': ['warn', 'property'],
+  'vue/eqeqeq': ['error', 'smart'],
+
+  'vue/first-attribute-linebreak': 'warn',
+  'vue/html-button-has-type': 'warn',
+  'vue/html-closing-bracket-spacing': 'warn',
+  'vue/html-closing-bracket-newline': 'warn',
+  'vue/html-comment-content-spacing': 'warn',
+  'vue/html-indent': [
+    'warn',
+    2,
+    {
+      alignAttributesVertically: false,
+    },
+  ],
+  'vue/html-quotes': 'warn',
   'vue/html-self-closing': [
     'warn',
     {svg: 'any'},
   ],
-  'vue/html-closing-bracket-newline': 'warn',
-  'vue/html-indent': 'warn',
   'vue/max-attributes-per-line': [
     'warn', {
       singleline: {
@@ -316,13 +343,19 @@ module.exports.vue = {
   // 'vue/mustache-interpolation-spacing': 'warn',
   'vue/multiline-html-element-content-newline': 'warn',
   'vue/next-tick-style': ['warn', 'promise'],
+  'vue/no-child-content': 'warn',
   'vue/no-duplicate-attr-inheritance': 'warn',
-  'vue/no-static-inline-styles': 'warn',
   'vue/no-invalid-model-keys': 'warn',
+  'vue/no-lone-template': 'error',
   'vue/no-multi-spaces': 'warn',
+  'vue/no-potential-component-option-typo': 'warn',
   'vue/no-reserved-component-names': 'warn',
   'vue/no-spaces-around-equal-signs-in-attribute': 'warn',
+  'vue/no-static-inline-styles': 'warn',
+  'vue/no-template-shadow': 'warn',
   'vue/no-template-target-blank': 'warn',
+  'vue/no-use-computed-property-like-method': 'warn',
+  'vue/no-useless-concat': 'warn',
   'vue/prop-name-casing': 'warn',
   'vue/require-default-prop': 'warn',
   'vue/require-prop-types': 'warn',
