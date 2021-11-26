@@ -348,7 +348,11 @@ module.exports.vue = {
   'vue/no-invalid-model-keys': 'warn',
   'vue/no-lone-template': 'error',
   'vue/no-multi-spaces': 'warn',
-  'vue/no-potential-component-option-typo': 'warn',
+  'vue/no-potential-component-option-typo': [
+    'error', {
+      presets: ['vue', 'nuxt'],
+    },
+  ],
   'vue/no-reserved-component-names': 'warn',
   'vue/no-spaces-around-equal-signs-in-attribute': 'warn',
   'vue/no-static-inline-styles': 'warn',
