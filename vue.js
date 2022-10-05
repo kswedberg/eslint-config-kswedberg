@@ -3,7 +3,7 @@
 // or
 // yarn add -D eslint eslint-plugin-vue
 const config = require('./index.js');
-const {vue} = require('./rulesets');
+const {vue} = require('./rulesets.js');
 
 Object.assign(config.rules, vue);
 

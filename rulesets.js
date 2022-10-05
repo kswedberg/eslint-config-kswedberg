@@ -405,6 +405,8 @@ module.exports.vue = {
         'inheritAttrs',
         'layout',
 
+        'setup',
+
         ['extends', 'provide', 'inject', 'propsData'],
 
         ['key', 'parent', 'functional', 'delimiters', 'comments'],
@@ -424,7 +426,6 @@ module.exports.vue = {
         'loading',
 
         'emits',
-        'setup',
         'head',
 
         'watchQuery',
