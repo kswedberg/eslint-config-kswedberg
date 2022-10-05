@@ -309,7 +309,7 @@ module.exports.vue = {
     },
   ],
   'vue/comma-spacing': ['error', {before: false, after: true}],
-  'vue/custom-event-name-casing': 'warn',
+  'vue/custom-event-name-casing': 'off',
   'vue/dot-location': ['warn', 'property'],
   'vue/eqeqeq': ['error', 'smart'],
 
