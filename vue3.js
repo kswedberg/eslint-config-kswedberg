@@ -5,7 +5,16 @@
 const config = require('./index.js');
 const {vue} = require('./rulesets.js');
 
-Object.assign(config.rules, vue);
+// Remove deprecated rule and replace with new one
+const {'vue/v-on-function-call': onFnCall, ...vue2} = vue;
+const vue3 = {
+  'vue/v-on-handler-style': [
+    'warn',
+    ['method', 'inline'],
+  ],
+};
+
+Object.assign(config.rules, vue2, vue3);
 
 module.exports = Object.assign(config, {
   extends: [

@@ -2,22 +2,9 @@
 // vue add @vue/cli-plugin-eslint
 // or
 // yarn add -D eslint eslint-plugin-vue
-const config = require('./index.js');
-const {vue} = require('./rulesets.js');
-
-Object.assign(config.rules, vue);
+const config = require('./vue3.js');
 
 module.exports = Object.assign(config, {
-  extends: [
-    'plugin:vue/vue3-essential',
-  ],
-  plugins: [
-    'vue',
-  ],
-  env: {
-    node: true,
-    es6: true,
-  },
   globals: {
     useAppConfig: 'readonly',
     useAsyncData: 'readonly',
