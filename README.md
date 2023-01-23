@@ -6,13 +6,17 @@ Run the following from the project's root:
 
 `npm install eslint-config-kswedberg --save-dev`
 
+or:
+
+`yarn add eslint-config-kswedberg --dev`
+
 Then, add the config to the project's `.eslintrc.js` file.
 
 For linting _with_ es6 features enabled:
 
 ```
 module.exports = {
-  'extends': 'kswedberg'
+  extends: 'kswedberg'
 };
 ```
 
@@ -20,10 +24,19 @@ If you want react (as well as es6) features enabled:
 
 ```
 module.exports = {
-  'extends': 'kswedberg/react'
+  extends: 'kswedberg/react'
 };
 ```
+
 Note that you'll need to have `eslint-plugin-react` installed.
+
+For Vue features, you have a few options for the `extends` value:
+
+* Vue 2.x: `kswedberg/vue`
+* Vue 3.x: `kswedberg/vue3`
+* Nuxst 3.x: `kswedberg/nuxt3`
+
+For all Vue or Nuxt versions, you'll need the `eslint-plugin-vue` plugin.
 
 If you _don't_ want es6 or react features:
 
