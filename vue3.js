@@ -4,6 +4,7 @@
 // yarn add -D eslint eslint-plugin-vue
 const config = require('./index.js');
 const {vue} = require('./rulesets.js');
+const {vue3Globals} = require('./globals.js');
 
 // Remove deprecated rule and replace with new one
 const {'vue/v-on-function-call': onFnCall, ...vue2} = vue;
@@ -22,6 +23,12 @@ module.exports = Object.assign(config, {
   ],
   plugins: [
     'vue',
+  ],
+  overrides: [
+    {
+      files: '**/*.vue',
+      globals: vue3Globals,
+    },
   ],
   env: {
     node: true,
