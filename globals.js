@@ -5,6 +5,10 @@ const reducer = (obj, curr) => {
 };
 
 const vue = [
+  'defineProps',
+  'defineEmits',
+  'defineExpose',
+  'withDefaults',
 
   // lifecycle
   'onActivated',

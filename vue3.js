@@ -26,7 +26,7 @@ module.exports = Object.assign(config, {
   ],
   overrides: [
     {
-      files: '**/*.vue',
+      files: '**/*.{vue,js}',
       globals: vue3Globals,
     },
   ],
