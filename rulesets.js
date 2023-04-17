@@ -125,6 +125,7 @@ module.exports.bestPractices = {
       allowTernary: false,
     },
   ],
+  'no-unused-vars': 'off',
   'no-useless-escape': 'warn',
   'no-useless-return': 'warn',
   'no-void': 'error',
@@ -206,6 +207,7 @@ module.exports.stylistic = {
     },
   ],
   'max-params': ['error', 5],
+  'multiline-ternary': ['warn', 'always-multiline'],
   'new-cap': [
     'warn',
     {newIsCap: true},
@@ -228,6 +230,7 @@ module.exports.stylistic = {
   ],
   'no-unneeded-ternary': 'warn',
   'no-whitespace-before-property': 'warn',
+  'operator-linebreak': ['warn', 'after'],
   'padding-line-between-statements': [
     'warn',
     {
@@ -240,7 +243,6 @@ module.exports.stylistic = {
       prev: ['const', 'let', 'var'],
       next: ['const', 'let', 'var'],
     },
-
     {
       blankLine: 'always',
       prev: '*',

@@ -8,7 +8,7 @@ const {nuxt3Globals} = require('./globals.js');
 module.exports = Object.assign(config, {
   overrides: [
     {
-      files: '**/*.{vue,js}',
+      files: '**/*.{vue,js,mjs,ts}',
       globals: nuxt3Globals,
     },
   ],
