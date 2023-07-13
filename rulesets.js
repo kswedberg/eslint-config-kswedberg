@@ -151,8 +151,8 @@ module.exports.stylistic = {
     'warn', {
       arrays: 'always-multiline',
       objects: 'always-multiline',
-      imports: 'never',
-      exports: 'never',
+      imports: 'ignore',
+      exports: 'ignore',
       functions: 'ignore',
     },
   ],
