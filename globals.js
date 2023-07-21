@@ -102,9 +102,12 @@ const nuxt = [
   'useState',
 
   // Server middleware
+  'createRouter',
   'defineEventHandler',
+  'getCookie',
   'getQuery',
   'sendRedirect',
+  'setCookie',
 ];
 
 module.exports = {
