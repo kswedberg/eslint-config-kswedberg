@@ -13,6 +13,11 @@ const vue3 = {
     'warn',
     ['method', 'inline'],
   ],
+  'vue/multi-word-component-names': 'off',
+  'vue/no-multiple-template-root': 'off',
+  'vue/no-v-html': 'off',
+  'vue/no-v-text-v-html-on-component': 'off',
+  'vue/require-default-prop': 'warn',
 };
 
 Object.assign(config.rules, vue2, vue3);
