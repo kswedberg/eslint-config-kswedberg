@@ -10,7 +10,7 @@ const rules = Object.assign(
 
 module.exports = {
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 'latest',
     sourceType: 'module',
     ecmaFeatures: {impliedStrict: true},
   },
@@ -20,7 +20,6 @@ module.exports = {
     es6: true,
     jquery: true,
   },
-  globals: {Modernizr: false},
 
   rules: rules,
 };
