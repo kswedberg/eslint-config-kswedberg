@@ -63,7 +63,9 @@ module.exports.bestPractices = {
     {allowPattern: '^[a-z0-9]*_[_a-z0-9]*$'},
   ],
   eqeqeq: ['error', 'smart'],
+  'no-async-promise-executor': 'warn',
   'no-caller': 'warn',
+  'no-console': 'off',
   'no-else-return': ['error', {allowElseIf: true}],
   'no-empty-function': 'warn',
   'no-empty-pattern': 'warn',
@@ -73,6 +75,7 @@ module.exports.bestPractices = {
   'no-extra-bind': 'error',
   'no-implied-eval': 'error',
   'no-invalid-this': 'off',
+
   'no-iterator': 'error',
   'no-lone-blocks': 'warn',
   'no-loop-func': 'warn',
@@ -86,6 +89,8 @@ module.exports.bestPractices = {
     'error',
     {props: false},
   ],
+  'no-promise-executor-return': 'warn',
+
   'no-proto': 'error',
   'no-redeclare': 'error',
   'no-restricted-properties': [
@@ -134,6 +139,7 @@ module.exports.bestPractices = {
     'warn',
     {allowEmptyReject: true},
   ],
+  'require-atomic-updates': 'warn',
   'wrap-iife': ['error', 'any'],
   yoda: ['warn', 'never'],
 };
@@ -143,10 +149,7 @@ module.exports.stylistic = {
   'array-bracket-spacing': ['warn', 'never'],
   'array-element-newline': ['warn', 'consistent'],
   'brace-style': 'warn',
-  camelcase: ['warn', {
-    properties: 'never',
-    ignoreDestructuring: true,
-  }],
+  camelcase: 'off',
   'comma-dangle': [
     'warn', {
       arrays: 'always-multiline',
@@ -207,7 +210,7 @@ module.exports.stylistic = {
     },
   ],
   'max-params': ['error', 5],
-  'multiline-ternary': ['warn', 'always-multiline'],
+  'multiline-ternary': 'off',
   'new-cap': [
     'warn',
     {newIsCap: true},
@@ -223,7 +226,7 @@ module.exports.stylistic = {
   'no-underscore-dangle': [
     'warn',
     {
-      allow: ['_this'],
+      allow: ['_this', '_id', '_value', '__raw__sectionsSchema'],
       allowAfterThis: true,
       enforceInMethodNames: false,
     },
@@ -399,6 +402,7 @@ module.exports.vue = {
       ],
     },
   ],
+  'vue/multi-word-component-names': 'off',
   'vue/order-in-components': [
     'warn', {
       order: [
