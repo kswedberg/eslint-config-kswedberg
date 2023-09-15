@@ -5,9 +5,15 @@
 const config = require('./vue3.js');
 const {nuxt3Globals} = require('./globals.js');
 
+const nuxt3Rules = {
+  '@typescript-eslint/no-unused-vars': 'off',
+};
+
 if (config.rules['no-undef']) {
   delete config.rules['no-undef'];
 }
+
+Object.assign(config.rules, nuxt3Rules);
 
 module.exports = Object.assign(config, {
   overrides: [
