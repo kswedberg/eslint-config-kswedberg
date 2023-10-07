@@ -17,8 +17,7 @@ module.exports = {
     jquery: true,
   },
   globals: {
-    FM: true,
-    Modernizr: false,
+    Modernizr: 'readonly',
   },
 
   rules: rules,
