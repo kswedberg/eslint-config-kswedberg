@@ -14,6 +14,11 @@ if (config.rules['no-undef']) {
 }
 
 Object.assign(config.rules, nuxt3Rules);
+Object.assign(config.parserOptions, {
+  parser: {
+    js: 'espree',
+  },
+});
 
 module.exports = Object.assign(config, {
   overrides: [
