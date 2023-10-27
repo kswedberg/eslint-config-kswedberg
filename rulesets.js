@@ -202,16 +202,7 @@ module.exports.stylistic = {
   ],
   '@stylistic/linebreak-style': ['warn', 'unix'],
   'max-params': ['error', 5],
-  /**
-   * This rule hasn't been implemented in @stylistic as of 2023-10-27
-   */
-  // '@stylistic/lines-around-directive': [
-  //   'warn',
-  //   {
-  //     before: 'always',
-  //     after: 'always',
-  //   },
-  // ],
+
   '@stylistic/multiline-ternary': 'off',
   'new-cap': [
     'warn',
