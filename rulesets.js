@@ -13,7 +13,7 @@ module.exports.possibleErrors = {
   'no-empty': 'warn',
   'no-empty-pattern': 'warn',
   'no-extra-boolean-cast': 'warn',
-  'no-extra-parens': [
+  '@stylistic/no-extra-parens': [
     'warn',
     'all',
     {
@@ -22,7 +22,7 @@ module.exports.possibleErrors = {
       ignoreJSX: 'all',
     },
   ],
-  'no-extra-semi': 'warn',
+  '@stylistic/no-extra-semi': 'warn',
   'no-inner-declarations': 'error',
   'no-invalid-regexp': 'error',
   'no-obj-calls': 'warn',
@@ -32,10 +32,10 @@ module.exports.possibleErrors = {
 
 module.exports.es6 = {
   'arrow-body-style': 'off',
-  'arrow-spacing': 'warn',
+  '@stylistic/arrow-spacing': 'warn',
   'arrow-parens': ['warn', 'always'],
   'no-class-assign': 'warn',
-  'no-confusing-arrow': ['error', {allowParens: true}],
+  '@stylistic/no-confusing-arrow': ['error', {allowParens: true}],
   'no-const-assign': 'error',
   'no-import-assign': 'warn',
   'no-duplicate-imports': 'warn',
@@ -50,14 +50,14 @@ module.exports.es6 = {
   'prefer-spread': 'warn',
   'prefer-template': 'warn',
   'require-await': 'warn',
-  'rest-spread-spacing': ['warn', 'never'],
-  'template-curly-spacing': ['warn', 'never'],
+  '@stylistic/rest-spread-spacing': ['warn', 'never'],
+  '@stylistic/template-curly-spacing': ['warn', 'never'],
 };
 
 module.exports.bestPractices = {
   'array-callback-return': 'warn',
   curly: ['warn', 'all'],
-  'dot-location': ['warn', 'property'],
+  '@stylistic/dot-location': ['warn', 'property'],
   'dot-notation': [
     'warn',
     {allowPattern: '^[a-z0-9]*_[_a-z0-9]*$'},
@@ -75,11 +75,10 @@ module.exports.bestPractices = {
   'no-extra-bind': 'error',
   'no-implied-eval': 'error',
   'no-invalid-this': 'off',
-
   'no-iterator': 'error',
   'no-lone-blocks': 'warn',
   'no-loop-func': 'warn',
-  'no-multi-spaces': [
+  '@stylistic/no-multi-spaces': [
     'warn',
     {exceptions: {VariableDeclarator: true}},
   ],
@@ -90,7 +89,6 @@ module.exports.bestPractices = {
     {props: false},
   ],
   'no-promise-executor-return': 'warn',
-
   'no-proto': 'error',
   'no-redeclare': 'error',
   'no-restricted-properties': [
@@ -140,18 +138,19 @@ module.exports.bestPractices = {
     {allowEmptyReject: true},
   ],
   'require-atomic-updates': 'warn',
-  'wrap-iife': ['error', 'any'],
+  '@stylistic/wrap-iife': ['error', 'any'],
   yoda: ['warn', 'never'],
 };
 
 module.exports.stylistic = {
-  'array-bracket-newline': ['warn', 'consistent'],
-  'array-bracket-spacing': ['warn', 'never'],
-  'array-element-newline': ['warn', 'consistent'],
-  'brace-style': 'warn',
+  '@stylistic/array-bracket-newline': ['warn', 'consistent'],
+  '@stylistic/array-bracket-spacing': ['warn', 'never'],
+  '@stylistic/array-element-newline': ['warn', 'consistent'],
+  '@stylistic/brace-style': 'warn',
   camelcase: 'off',
-  'comma-dangle': [
-    'warn', {
+  '@stylistic/comma-dangle': [
+    'warn',
+    {
       arrays: 'always-multiline',
       objects: 'always-multiline',
       imports: 'ignore',
@@ -159,14 +158,14 @@ module.exports.stylistic = {
       functions: 'ignore',
     },
   ],
-  'comma-spacing': ['error', {before: false, after: true}],
-  'eol-last': 'warn',
-  'func-call-spacing': ['warn', 'never'],
+  '@stylistic/comma-spacing': ['error', {before: false, after: true}],
+  '@stylistic/eol-last': 'warn',
+  '@stylistic/func-call-spacing': ['warn', 'never'],
   'func-name-matching': 'warn',
   'func-style': ['warn', 'expression'],
-  'function-paren-newline': ['warn', 'consistent'],
-  'implicit-arrow-linebreak': ['error', 'beside'],
-  indent: [
+  '@stylistic/function-paren-newline': ['warn', 'consistent'],
+  '@stylistic/implicit-arrow-linebreak': ['error', 'beside'],
+  '@stylistic/indent': [
     'warn',
     2,
     {
@@ -175,15 +174,15 @@ module.exports.stylistic = {
       ignoredNodes: ['TemplateLiteral'],
     },
   ],
-  'jsx-quotes': ['warn', 'prefer-single'],
-  'key-spacing': [
+  '@stylistic/jsx-quotes': ['warn', 'prefer-single'],
+  '@stylistic/key-spacing': [
     'warn',
     {
       beforeColon: false,
       afterColon: true,
     },
   ],
-  'keyword-spacing': [
+  '@stylistic/keyword-spacing': [
     'warn',
     {
       overrides: {
@@ -201,28 +200,31 @@ module.exports.stylistic = {
       },
     },
   ],
-  'linebreak-style': ['warn', 'unix'],
-  'lines-around-directive': [
-    'warn',
-    {
-      before: 'always',
-      after: 'always',
-    },
-  ],
+  '@stylistic/linebreak-style': ['warn', 'unix'],
   'max-params': ['error', 5],
-  'multiline-ternary': 'off',
+  /**
+   * This rule hasn't been implemented in @stylistic as of 2023-10-27
+   */
+  // '@stylistic/lines-around-directive': [
+  //   'warn',
+  //   {
+  //     before: 'always',
+  //     after: 'always',
+  //   },
+  // ],
+  '@stylistic/multiline-ternary': 'off',
   'new-cap': [
     'warn',
     {newIsCap: true},
   ],
-  'new-parens': 'warn',
+  '@stylistic/new-parens': 'warn',
   'no-array-constructor': 'warn',
   'no-lonely-if': 'error',
-  'no-mixed-spaces-and-tabs': ['warn', 'smart-tabs'],
-  'no-multiple-empty-lines': 'warn',
+  '@stylistic/no-mixed-spaces-and-tabs': ['warn', 'smart-tabs'],
+  '@stylistic/no-multiple-empty-lines': 'warn',
   'no-new-object': 'warn',
   'no-nested-ternary': 'warn',
-  'no-trailing-spaces': 'warn',
+  '@stylistic/no-trailing-spaces': 'warn',
   'no-underscore-dangle': [
     'warn',
     {
@@ -232,9 +234,9 @@ module.exports.stylistic = {
     },
   ],
   'no-unneeded-ternary': 'warn',
-  'no-whitespace-before-property': 'warn',
-  'operator-linebreak': ['warn', 'after'],
-  'padding-line-between-statements': [
+  '@stylistic/no-whitespace-before-property': 'warn',
+  '@stylistic/operator-linebreak': ['warn', 'after'],
+  '@stylistic/padding-line-between-statements': [
     'warn',
     {
       blankLine: 'always',
@@ -251,7 +253,6 @@ module.exports.stylistic = {
       prev: '*',
       next: 'return',
     },
-
     {
       blankLine: 'always',
       prev: 'import',
@@ -267,29 +268,46 @@ module.exports.stylistic = {
     'warn',
     {initialized: 'never'},
   ],
-  'quote-props': ['warn', 'as-needed'],
-  'newline-per-chained-call': [
+  '@stylistic/quote-props': [
+    'warn',
+    'as-needed',
+  ],
+  '@stylistic/newline-per-chained-call': [
     'warn',
     {ignoreChainWithDepth: 3},
   ],
-  'object-curly-newline': ['warn', {consistent: true}],
-  'object-curly-spacing': ['warn', 'never'],
-  quotes: ['warn', 'single'],
-  semi: ['error', 'always'],
-  'semi-spacing': 'warn',
-  'space-before-blocks': ['warn', 'always'],
-  'space-before-function-paren': ['warn', 'never'],
-  'space-in-parens': ['warn', 'never'],
-  'space-infix-ops': 'warn',
-  'space-unary-ops': [
+  '@stylistic/object-curly-newline': [
+    'warn',
+    {consistent: true},
+  ],
+  '@stylistic/object-curly-spacing': [
+    'warn',
+    'never',
+  ],
+  '@stylistic/quotes': [
+    'warn',
+    'single',
+  ],
+  '@stylistic/semi': [
+    'error',
+    'always',
+  ],
+  '@stylistic/semi-spacing': 'warn',
+  '@stylistic/space-before-blocks': ['warn', 'always'],
+  '@stylistic/space-before-function-paren': ['warn', 'never'],
+  '@stylistic/space-in-parens': [
+    'warn',
+    'never',
+  ],
+  '@stylistic/space-infix-ops': 'warn',
+  '@stylistic/space-unary-ops': [
     'warn',
     {
       words: false,
       nonwords: false,
     },
   ],
-
-  'spaced-comment': [
+  '@stylistic/spaced-comment': [
     'warn',
     'always',
     {

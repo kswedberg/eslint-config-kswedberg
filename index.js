@@ -1,4 +1,4 @@
-const rulesets = require('./rulesets');
+const rulesets = require('./rulesets.js');
 const rules = Object.assign(
   {},
   rulesets.variables,
@@ -19,6 +19,8 @@ module.exports = {
     node: true,
     jquery: true,
   },
-
+  plugins: [
+    '@stylistic',
+  ],
   rules: rules,
 };

@@ -1,6 +1,6 @@
 # eslint config
 
-## Usage
+## Install
 
 Run the following from the project's root:
 
@@ -10,9 +10,14 @@ or:
 
 `yarn add eslint-config-kswedberg --dev`
 
-Then, add the config to the project's `.eslintrc.js` file.
+Then, add the config to the project's `.eslintrc.js` file as described in the Usage section below.
 
-\* Note: eslint supports a few different formats for the `...rc` file, including JavaScript, JSON, and YAML. You may use any format that eslint supports.
+## Usage
+
+### Notes
+
+* ESLint supports a few different formats for the `...rc` file, including JavaScript, JSON, and YAML. You may use any format that eslint supports.
+* As of version 6.0.0, this package installs `@stylistic/eslint` and updates all the formatting rules to use the plugin instead of ESLint core. This is to prepare for ESLint's [deprecation of formatting rules](https://eslint.org/blog/2023/10/deprecating-formatting-rules/).
 
 ### Plain JavaScript
 
