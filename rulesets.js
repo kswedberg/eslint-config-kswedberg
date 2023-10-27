@@ -245,6 +245,11 @@ module.exports.stylistic = {
       next: 'return',
     },
     {
+      blankLine: 'any',
+      prev: 'const',
+      next: 'return',
+    },
+    {
       blankLine: 'always',
       prev: 'import',
       next: '*',
