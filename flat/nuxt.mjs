@@ -1,7 +1,7 @@
 import globals from 'globals';
 import stylisticPlugin from '@stylistic/eslint-plugin';
-import {nuxtGlobals} from './globals.js';
-import {es6Rules, vue, vue3} from './rulesets.js';
+import {nuxtGlobals} from './globals.mjs';
+import {es6Rules, vue, vue3} from './rulesets.mjs';
 
 export default [
   {
@@ -22,6 +22,9 @@ export default [
   },
   {
     name: 'bamf/js',
+    plugins: {
+      '@stylistic': stylisticPlugin,
+    },
     rules: {
       ...es6Rules,
     },
