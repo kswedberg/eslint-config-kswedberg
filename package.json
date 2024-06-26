@@ -24,9 +24,10 @@
     "eslint": ">=8.0.0"
   },
   "engines": {
-    "node": ">= 6"
+    "node": ">= 16"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "^0.1.1"
+    "@stylistic/eslint-plugin": "^2.3.0",
+    "globals": "^15.6.0"
   }
 }

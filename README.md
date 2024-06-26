@@ -10,14 +10,45 @@ or:
 
 `yarn add eslint-config-kswedberg --dev`
 
-Then, add the config to the project's `.eslintrc.js` file as described in the Usage section below.
+Then, add the config to the project's `eslint.config.x` or `.eslintrc.js` file as described in the on of the usage sections below.
 
-## Usage
+## Notes
 
-### Notes
-
-* ESLint supports a few different formats for the `...rc` file, including JavaScript, JSON, and YAML. You may use any format that eslint supports.
 * As of version 6.0.0, this package installs `@stylistic/eslint` and updates all the formatting rules to use the plugin instead of ESLint core. This is to prepare for ESLint's [deprecation of formatting rules](https://eslint.org/blog/2023/10/deprecating-formatting-rules/).
+
+## FLAT CONFIG
+
+Currently there is only one flat config file: `flat/nuxt.mjs`. There are two ways to use it…
+
+With `@nuxt/eslint` (recommended):
+
+```js
+import nuxtConfig from 'eslint-config-kswedberg/flat/nuxt.mjs';
+import withNuxt from './.nuxt/eslint.config.mjs';
+
+export default withNuxt(
+  // append project-specific configs
+  ...bamfNuxt,
+);
+
+```
+
+Using this config by itself:
+
+```js
+import nuxtConfig from 'eslint-config-kswedberg/flat/nuxt.mjs';
+
+export default [
+  ...nuxtConfig,
+];
+```
+
+
+
+## LEGACY CONFIG
+
+* **Deprecation Notice**: As of version 6 of this package, the legacy config files are deprecated in favor of the flat config.
+* ESLint supports a few different formats for the `...rc` file, including JavaScript, JSON, and YAML. You may use any format that eslint supports.
 
 ### Plain JavaScript
 
