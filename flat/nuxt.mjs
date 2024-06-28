@@ -1,46 +1,18 @@
-import globals from 'globals';
-import stylisticPlugin from '@stylistic/eslint-plugin';
 import {nuxtGlobals} from './globals.mjs';
-import {es6Rules, vue, vue3} from './rulesets.mjs';
+import vueConfig from './vue.mjs';
 
 export default [
+  ...vueConfig,
   {
-    ignores: [
-      'gitignore/**/*',
-      'src/public/*.js',
-    ],
-  },
-  {
-    name: 'bamf/languageOptions',
+    name: 'kswedberg/nuxtGlobals',
     languageOptions: {
       globals: {
-        ...globals.browser,
-        ...globals.node,
         ...nuxtGlobals,
       },
     },
   },
   {
-    name: 'bamf/js',
-    plugins: {
-      '@stylistic': stylisticPlugin,
-    },
-    rules: {
-      ...es6Rules,
-    },
-  },
-  {
-    name: 'bamf/vue',
-    plugins: {
-      '@stylistic': stylisticPlugin,
-    },
-    rules: {
-      ...vue,
-      ...vue3,
-    },
-  },
-  {
-    name: 'bamf/ts',
+    name: 'kswedberg/ts',
     files: ['**/*.{ts,tsx,vue}'],
     ignores: ['src/**/index.d.ts'],
     rules: {

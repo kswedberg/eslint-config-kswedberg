@@ -18,7 +18,29 @@ Then, add the config to the project's `eslint.config.x` or `.eslintrc.js` file a
 
 ## FLAT CONFIG
 
-Currently there is only one flat config file: `flat/nuxt.mjs`. There are two ways to use it…
+### JavaScript (ES6+)
+
+```js
+import jsConfig from 'eslint-config-kswedberg/flat/js.mjs';
+
+export default [
+  ...jsConfig,
+];
+```
+
+### Vue 3
+
+```js
+import vueConfig from 'eslint-config-kswedberg/flat/vue.mjs';
+
+export default [
+  ...vueConfig,
+];
+```
+
+### Nuxt 3
+
+You can use the Nuxt config in one of two ways…
 
 With `@nuxt/eslint` (recommended):
 
@@ -27,8 +49,11 @@ import nuxtConfig from 'eslint-config-kswedberg/flat/nuxt.mjs';
 import withNuxt from './.nuxt/eslint.config.mjs';
 
 export default withNuxt(
+  ...nuxtConfig,
   // append project-specific configs
-  ...bamfNuxt,
+  // {
+  //
+  // }
 );
 
 ```
