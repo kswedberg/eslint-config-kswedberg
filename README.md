@@ -68,9 +68,21 @@ export default [
 ];
 ```
 
-### Vue and Nuxt globals
+### Globals
 
-You're probably better off using a separate plugin for Vue and Nuxt globals. Consider `@nuxt/eslint` or `nuxt-eslint-globals` instead.  The ones included in this repo are static lists, so they are prone to become outdated. If you really want to use them, you can do so like this:
+For the sake of completion, this repo offers configs for **browser** and **node.js** globals:
+
+```js
+import {browserGlobals, nodeGlobals} from 'eslint-config-kswedberg/flat/globals.mjs';
+
+export default {
+  browserGlobals,
+  nodeGlobals,
+  // other configs
+};
+```
+
+For Vue and Nuxt globals, you're probably better off using a separate plugin. Consider `@nuxt/eslint` or `nuxt-eslint-globals` instead.  The ones included in this repo are static lists, so they are prone to become outdated. If you really want to use them, you can do so like this:
 
 ```js
 // Vue-only globals

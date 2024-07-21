@@ -1,3 +1,5 @@
+import globals from 'globals';
+
 const reducer = (obj, curr) => {
   obj[curr] = 'readonly';
 
@@ -109,6 +111,22 @@ const nuxt = [
   'sendRedirect',
   'setCookie',
 ];
+
+export const browserGlobals = {
+  languageOptions: {
+    globals: {
+      ...globals.browser,
+    },
+  },
+};
+
+export const nodeGlobals = {
+  languageOptions: {
+    globals: {
+      ...globals.node,
+    },
+  },
+};
 
 export const vueGlobals = {
   name: 'kswedberg/vue-globals',

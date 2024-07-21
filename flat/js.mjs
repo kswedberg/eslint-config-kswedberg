@@ -1,4 +1,3 @@
-import globals from 'globals';
 import stylisticPlugin from '@stylistic/eslint-plugin';
 
 const variables = {
@@ -332,18 +331,12 @@ const es6Rules = Object.assign(
 
 export default [
   {
+    name: 'kswedberg/ignores',
     ignores: [
       'gitignore/**/*',
     ],
   },
-  {
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-      },
-    },
-  },
+
   {
     name: 'kswedberg/js',
     plugins: {
