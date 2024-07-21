@@ -110,4 +110,16 @@ const nuxt = [
   'setCookie',
 ];
 
-export const nuxtGlobals = nuxt.reduce(reducer, {});
+export const vueGlobals = {
+  name: 'kswedberg/vue-globals',
+  languageOptions: {
+    globals: vue.reduce(reducer, {}),
+  },
+};
+
+export const nuxtGlobals  = {
+  name: 'kswedberg/nuxt-globals',
+  languageOptions: {
+    globals: nuxt.reduce(reducer, {}),
+  },
+};

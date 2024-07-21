@@ -4,14 +4,6 @@ import vueConfig from './vue.mjs';
 export default [
   ...vueConfig,
   {
-    name: 'kswedberg/nuxtGlobals',
-    languageOptions: {
-      globals: {
-        ...nuxtGlobals,
-      },
-    },
-  },
-  {
     name: 'kswedberg/ts',
     files: ['**/*.{ts,tsx,vue}'],
     ignores: ['src/**/index.d.ts'],
