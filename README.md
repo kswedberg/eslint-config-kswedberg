@@ -10,7 +10,7 @@ or:
 
 `yarn add eslint-config-kswedberg --dev`
 
-Then, add the config to the project's `eslint.config.x` or `.eslintrc.js` file as described in the on of the usage sections below.
+Then, add the config to the project's `eslint.config.x` or `.eslintrc.js` file as described in one of the usage sections below.
 
 ## Notes
 
@@ -68,7 +68,29 @@ export default [
 ];
 ```
 
+### Vue and Nuxt globals
 
+You're probably better off using a separate plugin for Vue and Nuxt globals. Consider `@nuxt/eslint` or `nuxt-eslint-globals` instead.  The ones included in this repo are static lists, so they are prone to become outdated. If you really want to use them, you can do so like this:
+
+```js
+// Vue-only globals
+import {vueGlobals} from 'eslint-config-kswedberg/flat/globals.mjs';
+
+export default [
+  vueGlobals,
+  // other configs
+];
+```
+
+```js
+// Vue AND Nuxt globals
+import {nuxtGlobals} 'eslint-config-kswedberg/flat/globals.mjs'
+
+export default [
+  nuxtGlobals,
+  // other configs
+];
+```
 
 ## LEGACY CONFIG
 
