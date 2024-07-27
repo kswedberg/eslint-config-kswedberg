@@ -1,4 +1,3 @@
-import {nuxtGlobals} from './globals.mjs';
 import vueConfig from './vue.mjs';
 
 export default [
