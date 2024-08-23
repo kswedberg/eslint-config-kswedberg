@@ -85,7 +85,7 @@ export default [
         },
       ],
       'vue/attributes-order': [
-        'error',
+        'warn',
         {
           order: [
             [
