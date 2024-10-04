@@ -1,6 +1,5 @@
 // Rules for eslint-plugin-unicorn
 export default {
-  'unicorn/better-regex': 'warn',
   // 'unicorn/catch-error-name': 'warn',
   // 'unicorn/consistent-destructuring': 'warn',
   'unicorn/consistent-empty-array-spread': 'warn',
