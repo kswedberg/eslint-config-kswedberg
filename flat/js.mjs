@@ -175,7 +175,7 @@ const stylistic = {
   '@stylistic/comma-spacing': ['error', {before: false, after: true}],
   '@stylistic/dot-location': ['warn', 'property'],
   '@stylistic/eol-last': 'warn',
-  '@stylistic/func-call-spacing': ['warn', 'never'],
+  '@stylistic/function-call-spacing': ['warn', 'never'],
   '@stylistic/function-paren-newline': ['warn', 'consistent'],
   '@stylistic/implicit-arrow-linebreak': ['error', 'beside'],
   '@stylistic/indent': [
@@ -226,7 +226,7 @@ const stylistic = {
     'all',
     {
       nestedBinaryExpressions: false,
-      enforceForArrowConditionals: false,
+      ignoredNodes: ['ArrowFunctionExpression[body.type=ConditionalExpression]'],
       ignoreJSX: 'all',
     },
   ],
