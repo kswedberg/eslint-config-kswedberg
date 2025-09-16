@@ -296,7 +296,10 @@ const stylistic = {
   ],
   '@stylistic/semi-spacing': 'warn',
   '@stylistic/space-before-blocks': ['warn', 'always'],
-  '@stylistic/space-before-function-paren': ['warn', 'never'],
+  '@stylistic/space-before-function-paren': [
+    'warn',
+    {anonymous: 'never', named: 'never', asyncArrow: 'never', catch: 'always'},
+  ],
   '@stylistic/space-in-parens': [
     'warn',
     'never',
