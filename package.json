@@ -27,14 +27,14 @@
     "node": ">= 16"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "^5.3.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
     "eslint-plugin-regexp": "^2.10.0",
     "eslint-plugin-unicorn": "^62.0.0",
-    "eslint-plugin-vue": "^10.4.0",
-    "globals": "^17.0.0",
+    "eslint-plugin-vue": "^10.8.0",
+    "globals": "^17.4.0",
     "typescript": "^5.9.2"
   },
   "devDependencies": {
-    "eslint": "^9.35.0"
+    "eslint": "^9.39.4"
   }
 }
