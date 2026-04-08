@@ -5,6 +5,6 @@ export default [
   {
     name: 'kswedberg/unicorn-plugin',
     plugins: {unicorn: eslintPluginUnicorn},
-    rules: {unicorn: unicornRules},
+    rules: unicornRules,
   },
 ];
