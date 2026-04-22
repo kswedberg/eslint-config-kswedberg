@@ -20,8 +20,12 @@ const possibleErrors = {
     'all',
     {
       nestedBinaryExpressions: false,
-      enforceForArrowConditionals: false,
       ignoreJSX: 'all',
+      ignoredNodes: [
+        'ArrowFunctionExpression[body.type=ConditionalExpression]',
+        'SpreadElement[argument.type=ConditionalExpression]',
+        'SpreadElement[argument.type=LogicalExpression]',
+      ],
     },
   ],
   '@stylistic/no-extra-semi': 'warn',
@@ -138,7 +142,7 @@ const stylistic = {
   ],
   '@stylistic/comma-spacing': ['error', {before: false, after: true}],
   '@stylistic/eol-last': 'warn',
-  '@stylistic/func-call-spacing': ['warn', 'never'],
+  '@stylistic/function-call-spacing': ['warn', 'never'],
   'func-name-matching': 'warn',
   'func-style': ['warn', 'expression'],
   '@stylistic/function-paren-newline': ['warn', 'consistent'],

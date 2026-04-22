@@ -226,7 +226,11 @@ const stylistic = {
     'all',
     {
       nestedBinaryExpressions: false,
-      ignoredNodes: ['ArrowFunctionExpression[body.type=ConditionalExpression]'],
+      ignoredNodes: [
+        'ArrowFunctionExpression[body.type=ConditionalExpression]',
+        'SpreadElement[argument.type=ConditionalExpression]',
+        'SpreadElement[argument.type=LogicalExpression]',
+      ],
       ignoreJSX: 'all',
     },
   ],
