@@ -132,13 +132,7 @@ const stylistic = {
   camelcase: 'off',
   '@stylistic/comma-dangle': [
     'warn',
-    {
-      arrays: 'always-multiline',
-      objects: 'always-multiline',
-      imports: 'ignore',
-      exports: 'ignore',
-      functions: 'ignore',
-    },
+    'never',
   ],
   '@stylistic/comma-spacing': ['error', {before: false, after: true}],
   '@stylistic/eol-last': 'warn',
@@ -312,6 +306,7 @@ export default [
     name: 'kswedberg/ignores',
     ignores: [
       'gitignore/**/*',
+      'lib/**/*',
     ],
   },
 
