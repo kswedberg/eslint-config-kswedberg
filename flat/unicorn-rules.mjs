@@ -137,7 +137,7 @@ export default {
   'unicorn/prefer-math-abs': 'warn',
   'unicorn/prefer-math-trunc': 'warn',
   'unicorn/prefer-math-min-max': 'warn',
-  'unicorn/prefer-minimal-ternary': 'warn',
+  // 'unicorn/prefer-minimal-ternary': 'warn',
   // 'unicorn/prefer-modern-dom-apis': 'warn',
   'unicorn/prefer-modern-math-apis': 'warn',
   // 'unicorn/prefer-module': 'warn',
