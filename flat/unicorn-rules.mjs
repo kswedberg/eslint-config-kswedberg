@@ -28,7 +28,7 @@ export default {
   'unicorn/no-break-in-nested-loop': 'warn',
   'unicorn/no-chained-comparison': 'warn',
   'unicorn/no-collection-bracket-access': 'warn',
-  'unicorn/no-computed-property-existence-check': 'warn',
+  // 'unicorn/no-computed-property-existence-check': 'warn',
   'unicorn/no-console-spaces': 'warn',
   'unicorn/no-declarations-before-early-exit': 'warn',
   'unicorn/no-document-cookie': 'warn',
@@ -100,7 +100,7 @@ export default {
   'unicorn/no-zero-fractions': 'warn',
   'unicorn/number-literal-case': 'warn',
   // 'unicorn/numeric-separators-style': 'warn',
-  'unicorn/prefer-abort-signal-any': 'warn',
+  // 'unicorn/prefer-abort-signal-any': 'warn', // TODO: Enable this rule
   'unicorn/prefer-abort-signal-timeout': 'warn',
   // 'unicorn/prefer-add-event-listener': 'warn',
   'unicorn/prefer-array-find': 'warn',
@@ -151,7 +151,6 @@ export default {
   'unicorn/prefer-observer-apis': 'warn',
   'unicorn/prefer-promise-try': 'warn',
   // 'unicorn/prefer-optional-catch-binding': 'warn',
-
   'unicorn/prefer-prototype-methods': 'warn',
   // 'unicorn/prefer-query-selector': 'warn',
   'unicorn/prefer-reflect-apply': 'warn',
