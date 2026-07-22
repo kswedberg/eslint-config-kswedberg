@@ -173,6 +173,7 @@ const stylistic = {
     },
   ],
   '@stylistic/comma-spacing': ['error', {before: false, after: true}],
+  '@stylistic/comma-style': ['warn', 'last'],
   '@stylistic/dot-location': ['warn', 'property'],
   '@stylistic/eol-last': 'warn',
   '@stylistic/function-call-spacing': ['warn', 'never'],
