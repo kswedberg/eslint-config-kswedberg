@@ -105,7 +105,7 @@ export default [
       'vue/no-static-inline-styles': 'warn',
       'vue/no-template-key': 'warn',
       'vue/no-template-shadow': 'warn',
-      'vue/no-template-target-blank': 'warn',
+      'vue/no-template-target-blank': 'off',
       'vue/no-textarea-mustache': 'warn',
       'vue/no-use-computed-property-like-method': 'warn',
       'vue/no-use-v-if-with-v-for': 'warn',
